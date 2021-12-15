@@ -1,6 +1,6 @@
 <?php 
 
-	class tipoReasignacion extends Controllers{
+	class tipoReasignacion extends Load{
 		private $model; 
 		public function __construct()
 		{

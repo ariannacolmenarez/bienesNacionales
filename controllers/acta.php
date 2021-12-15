@@ -1,6 +1,6 @@
 <?php 
 
-	class acta extends Controllers{
+	class acta extends Load{
 		private $model;
 		public function __construct()
 		{

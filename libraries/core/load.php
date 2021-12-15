@@ -1,6 +1,6 @@
 <?php 
-	class Controllers
-	{ protected $views;
+	class Load
+	{ 
 		public function __construct()
 		{
 			$this->loadModel();

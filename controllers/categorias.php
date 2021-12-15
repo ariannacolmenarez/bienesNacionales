@@ -1,6 +1,6 @@
 <?php 
 
-	class categorias extends Controllers{
+	class categorias extends Load{
 		
 		private $model;
 		public function __construct()

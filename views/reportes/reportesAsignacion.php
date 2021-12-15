@@ -2,12 +2,12 @@
 
     <!-- Main Content -->
     <div id="content">
-
+        
         <?php require_once('assets/components/navbar.php'); ?>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
+        
             <!-- Titulo -->
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
                 <h1 class="h3 mb-0 text-gray-800"><?= $data['page_title']; ?></h1>

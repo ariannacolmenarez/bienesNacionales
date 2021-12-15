@@ -1,6 +1,6 @@
 <?php 
 
-	class tipoBien extends Controllers{
+	class tipoBien extends Load{
 		
 		private $model;
 		public function __construct()

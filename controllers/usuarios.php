@@ -1,6 +1,6 @@
 <?php 
 
-	class usuarios extends Controllers{
+	class usuarios extends Load{
 		private $model;
 		public function __construct()
 		{

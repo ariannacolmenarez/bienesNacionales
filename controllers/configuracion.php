@@ -1,6 +1,6 @@
 <?php 
 
-	class configuracion extends Controllers{
+	class configuracion extends Load{
 		public function __construct()
 		{
 			if(!in_array("Consultar Configuracion", $_SESSION['bn_permisos'])){

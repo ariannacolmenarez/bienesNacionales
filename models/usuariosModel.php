@@ -65,12 +65,8 @@
     public function insertar(usuariosModel $p){
         try {
             $result = $p->getnombre();
-            $result2 = $p->getcorreo();
             $verificar= builder::duplicados("nombre","usuarios","$result");
-            $verificar2= builder::duplicados("correo","usuarios","$result2");
-            var_dump($verificar);
-            var_dump($verificar2);
-            if( $verificar === false || $verificar2 === false ){
+            if( $verificar === false){
                 
                 if($verificar === false){
                     $nombre="Nombre";
@@ -83,7 +79,6 @@
                 
             }
             elseif($verificar === NULL){
-                echo"elseif";
                 $_SESSION["mensaje"] = "¡Usuario registrado correctamente!";
 					$_SESSION["tipo_mensaje"] = "success";
             }

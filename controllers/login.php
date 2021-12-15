@@ -1,6 +1,6 @@
 <?php 
 
-	class login extends Controllers{
+	class login extends Load{
 		public function __construct()
 		{
 			parent::__construct();
@@ -21,6 +21,7 @@
 				$clave = $p->getclave();
 				$resp = $p->verificarUsuario();
 				if($resp){
+					
 					if($clave != $resp->clave){
 						$mensaje = "La Contraseña es incorrecta";
 						$iniciar = false;
@@ -37,6 +38,7 @@
 					$_SESSION['bn_id_usuario'] = $resp->id_usuario;
 					$_SESSION['bn_usuario'] = $resp->nombre;
 					$_SESSION['bn_correo'] = $resp->correo;
+					$_SESSION['bn_imagen'] = $resp->imagen;
 					$_SESSION['bn_permisos'] = $permisos;
 					header("location:".BASE_URL."inicio");
 				}

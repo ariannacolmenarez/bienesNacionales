@@ -66,7 +66,11 @@
         }
         var file = document.getElementById('fotos');
         var valor = file.value;
-        if(valor != ""){
+        if(valor == "" || valor == null ){
+            file.focus();
+                alerta("Debes ingresar una imagen"); 
+                return false;
+        }else{
             var expresion=/(.PNG|.JPG)$/i;
             if(!expresion.exec(valor)){
                 file.focus();

@@ -1,6 +1,6 @@
 <?php 
 
-	class incorporar extends Controllers{
+	class incorporar extends Load{
 		public function __construct()
 		{
 			if(!in_array("Consultar Asignar Bien", $_SESSION['bn_permisos'])){

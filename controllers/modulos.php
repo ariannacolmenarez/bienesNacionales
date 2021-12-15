@@ -1,6 +1,6 @@
 <?php 
 
-	class modulos extends Controllers{
+	class modulos extends Load{
 		private $model;
 		public function __construct()
 		{

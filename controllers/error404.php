@@ -1,6 +1,6 @@
 <?php 
 
-	class error404 extends Controllers{
+	class error404 extends Load{
 		public function __construct()
 		{
 			parent::__construct();

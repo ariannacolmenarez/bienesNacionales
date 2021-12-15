@@ -1,6 +1,6 @@
 <?php 
 
-	class dependencias extends Controllers{
+	class dependencias extends Load{
 		private $model;
 		public function __construct()
 		{

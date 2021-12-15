@@ -1,6 +1,6 @@
 <?php 
 	require_once('./models/actaModel.php');
-	class bienes extends Controllers{
+	class bienes extends Load{
 		private $model;
 		public function __construct()
 		{

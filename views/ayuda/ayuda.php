@@ -37,38 +37,38 @@
                     <div class="card shadow mb-4">
                         <a href="#collapseCard2" class="d-block card-header py-3" data-toggle="collapse"
                             role="button" aria-expanded="true" aria-controls="collapseCard2">
-                            <h6 class="m-0 font-weight-bold text-primary">2. Encargados</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">2. Gestionar Usuarios</h6>
                         </a>
                         <div class="collapse show" id="collapseCard2">
                             <div class="card-body">
-                                <p class="font-weight-bold text-dark">2.1 Consultar encargados</p> 
-                                <p>Al ingresar en el módulo de encargados, se puede observar una tabla con el listado de todos los usuarios encargados registrados en el sistema. </p>
-                                <p class="font-weight-bold text-dark">2.2 Registrar encargados</p>
-                                <p>En la parte superior derecha de la tabla de encargados se encuentra un botón "Agregar". Haciendo click en el se muestra un formulario para introducir los datos del encargado que se va a registrar.</p>
-                                <p class="font-weight-bold text-dark">2.3 Editar encargados</p>
-                                <p>La última columna de la tabla de encargados, contiene las opciones para cada registro. Entre ellas se encuentra un botón de editar con el icono de un lapiz. Haciendo click se mostrará un formulario con las opciones disponibles para editar el registro.</p>
-                                <p class="font-weight-bold text-dark">2.4 Eliminar encargados</p>
-                                <p>La última columna de la tabla de encargados, contiene las opciones para cada registro. Entre ellas se encuentra un botón (color rojo) de eliminar con el icono de una papelera. Haciendo click se mostrará una alerta de confirmación para eliminar el registro.</p>
+                                <p class="font-weight-bold text-dark">2.1 Consultar usuarios</p> 
+                                <p>Al ingresar en el módulo de usuarios, se puede observar una tabla con el listado de todos los usuarios registrados en el sistema. </p>
+                                <p class="font-weight-bold text-dark">2.2 Registrar usuarios</p>
+                                <p>En la parte superior derecha de la tabla de usuarios se encuentra un botón "Agregar". Haciendo click en el se muestra un formulario para introducir los datos del usuario que se va a registrar.</p>
+                                <p class="font-weight-bold text-dark">2.3 Editar usuarios</p>
+                                <p>La última columna de la tabla de usuarios, contiene las opciones para cada registro. Entre ellas se encuentra un botón de editar con el icono de un lapiz. Haciendo click se mostrará un formulario con las opciones disponibles para editar el registro.</p>
+                                <p class="font-weight-bold text-dark">2.4 Eliminar usuarios</p>
+                                <p>La última columna de la tabla de usuarios, contiene las opciones para cada registro. Entre ellas se encuentra un botón (color rojo) de eliminar con el icono de una papelera. Haciendo click se mostrará una alerta de confirmación para eliminar el registro.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-12 mb-1">
                     <div class="card shadow mb-4">
-                        <a href="#collapseCard3" class="d-block card-header py-3" data-toggle="collapse"
-                            role="button" aria-expanded="true" aria-controls="collapseCard3">
-                            <h6 class="m-0 font-weight-bold text-primary">3. Categorías</h6>
+                        <a href="#collapseCard2" class="d-block card-header py-3" data-toggle="collapse"
+                            role="button" aria-expanded="true" aria-controls="collapseCard2">
+                            <h6 class="m-0 font-weight-bold text-primary">3. Gestionar Encargados</h6>
                         </a>
-                        <div class="collapse show" id="collapseCard3">
+                        <div class="collapse show" id="collapseCard2">
                             <div class="card-body">
-                                <p class="font-weight-bold text-dark">3.1 Consultar categorías</p> 
-                                <p>Al ingresar en el módulo de categorías, se puede observar una tabla con el listado de todas las categorías registradas en el sistema.</p>
-                                <p class="font-weight-bold text-dark">3.2 Registrar categorías</p>
-                                <p>En la parte superior derecha de la tabla de categorias se encuentra un botón "Agregar". Haciendo click en el se muestra un formulario para introducir los datos de la categoría que se va a registrar.</p>
-                                <p class="font-weight-bold text-dark">3.3 Editar categorías</p>
-                                <p>La última columna de la tabla de categorias, contiene las opciones para cada registro. Entre ellas se encuentra un botón de editar con el icono de un lapiz. Haciendo click se mostrará un formulario con las opciones disponibles para editar el registro.</p>
-                                <p class="font-weight-bold text-dark">3.4 Eliminar categorias</p>
-                                <p>La última columna de la tabla de categorias, contiene las opciones para cada registro. Entre ellas se encuentra un botón (color rojo) de eliminar con el icono de una papelera. Haciendo click se mostrará una alerta de confirmación para eliminar el registro.</p>
+                                <p class="font-weight-bold text-dark">3.1 Consultar encargados</p> 
+                                <p>Al ingresar en el módulo de encargados, se puede observar una tabla con el listado de todos los usuarios encargados registrados en el sistema. </p>
+                                <p class="font-weight-bold text-dark">3.2 Registrar encargados</p>
+                                <p>En la parte superior derecha de la tabla de encargados se encuentra un botón "Agregar". Haciendo click en el se muestra un formulario para introducir los datos del encargado que se va a registrar.</p>
+                                <p class="font-weight-bold text-dark">3.3 Editar encargados</p>
+                                <p>La última columna de la tabla de encargados, contiene las opciones para cada registro. Entre ellas se encuentra un botón de editar con el icono de un lapiz. Haciendo click se mostrará un formulario con las opciones disponibles para editar el registro.</p>
+                                <p class="font-weight-bold text-dark">3.4 Eliminar encargados</p>
+                                <p>La última columna de la tabla de encargados, contiene las opciones para cada registro. Entre ellas se encuentra un botón (color rojo) de eliminar con el icono de una papelera. Haciendo click se mostrará una alerta de confirmación para eliminar el registro.</p>
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@
                     <div class="card shadow mb-4">
                         <a href="#collapseCard4" class="d-block card-header py-3" data-toggle="collapse"
                             role="button" aria-expanded="true" aria-controls="collapseCard4">
-                            <h6 class="m-0 font-weight-bold text-primary">4. Dependencias</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">4. Gestionar Dependencias</h6>
                         </a>
                         <div class="collapse show" id="collapseCard4">
                             <div class="card-body">
@@ -95,69 +95,64 @@
                 </div>
                 <div class="col-lg-12 mb-1">
                     <div class="card shadow mb-4">
+                        <a href="#collapseCard3" class="d-block card-header py-3" data-toggle="collapse"
+                            role="button" aria-expanded="true" aria-controls="collapseCard3">
+                            <h6 class="m-0 font-weight-bold text-primary">5. Gestionar Categorías</h6>
+                        </a>
+                        <div class="collapse show" id="collapseCard3">
+                            <div class="card-body">
+                                <p class="font-weight-bold text-dark">5.1 Consultar categorías</p> 
+                                <p>Al ingresar en el módulo de categorías, se puede observar una tabla con el listado de todas las categorías registradas en el sistema.</p>
+                                <p class="font-weight-bold text-dark">5.2 Registrar categorías</p>
+                                <p>En la parte superior derecha de la tabla de categorias se encuentra un botón "Agregar". Haciendo click en el se muestra un formulario para introducir los datos de la categoría que se va a registrar.</p>
+                                <p class="font-weight-bold text-dark">5.3 Editar categorías</p>
+                                <p>La última columna de la tabla de categorias, contiene las opciones para cada registro. Entre ellas se encuentra un botón de editar con el icono de un lapiz. Haciendo click se mostrará un formulario con las opciones disponibles para editar el registro.</p>
+                                <p class="font-weight-bold text-dark">5.4 Eliminar categorias</p>
+                                <p>La última columna de la tabla de categorias, contiene las opciones para cada registro. Entre ellas se encuentra un botón (color rojo) de eliminar con el icono de una papelera. Haciendo click se mostrará una alerta de confirmación para eliminar el registro.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-lg-12 mb-1">
+                    <div class="card shadow mb-4">
                         <a href="#collapseCard5" class="d-block card-header py-3" data-toggle="collapse"
                             role="button" aria-expanded="true" aria-controls="collapseCard5">
-                            <h6 class="m-0 font-weight-bold text-primary">5. Bienes</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">6.Gestionar Bienes</h6>
                         </a>
                         <div class="collapse show" id="collapseCard5">
                             <div class="card-body">
-                                <p class="font-weight-bold text-dark">5.1 Consultar bienes</p>
-                                <p>Al hacer click en el menú principal, en el módulo de bienes, se muestra una tabla con el listado de todos los bienes registrados en el sistema. En la última columna de cada registro de la tabla se encuentra un botón (color verde), haciendo click se puede consultar información mas detallada acerca del bien seleccionado.</p>
-                                <p class="font-weight-bold text-dark">5.2 Registrar bienes</p> 
-                                <p>Haciendo nuevamente click en el sub menú de bienes en la opción de registrar, se muestra un formulario para introducir los datos del bien que se va a registrar.</p>
-                                <p class="font-weight-bold text-dark">5.3 Editar bienes</p>
+                                <h6 class="m-0 font-weight-bold text-primary">6.1 Gestionar Actas</h6>
+                                <hr>
+                                <p class="font-weight-bold text-dark">6.1.1 Consultar bienes</p>
+                                <p>Haciendo click en el sub menú de gestionar bienes , se muestra una tabla con el listado de todos los bienes registrados en el sistema.</p>
+                                <p class="font-weight-bold text-dark">6.1.2 Registrar bienes</p> 
+                                <p>En la parte superior derecha de la tabla de bienes se encuentra un botón "Agregar". Haciendo click en el se muestra un formulario para introducir los datos de los bienes que se van a registrar</p>
+                                <p class="font-weight-bold text-dark">6.1.3 Editar bienes</p>
                                 <p>La última columna de la tabla de los bienes, contiene las opciones para cada registro. Entre ellas se encuentra un botón de editar con el icono de un lapiz. Haciendo click se mostrará un formulario con las opciones disponibles para editar el bien seleccionado.</p>
-                                <p class="font-weight-bold text-dark">5.4 Eliminar bienes</p>
+                                <p class="font-weight-bold text-dark">6.1.4 Eliminar bienes</p>
                                 <p>La última columna de la tabla de los bienes, contiene las opciones para cada registro. Entre ellas se encuentra un botón (color rojo) de eliminar con el icono de una papelera. Haciendo click se mostrará una alerta de confirmación para eliminar el bien seleccionado.</p>
-                                <p class="font-weight-bold text-dark">5.5 Desincorporar bienes</p>
-                                <p>La última columna de la tabla de dependencias, contiene las opciones para cada registro. Entre ellas se encuentra un botón de editar con el icono de un lapiz. Haciendo click se mostrará un formulario con las opciones disponibles para editar el registro.</p>
-                                <p class="font-weight-bold text-dark">5.5 Reasignar bienes</p>
-                                <p>La última columna de la tabla de dependencias, contiene las opciones para cada registro. Entre ellas se encuentra un botón de editar con el icono de un lapiz. Haciendo click se mostrará un formulario con las opciones disponibles para editar el registro.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 mb-1">
-                    <div class="card shadow mb-4">
-                        <a href="#collapseCard6" class="d-block card-header py-3" data-toggle="collapse"
-                            role="button" aria-expanded="true" aria-controls="collapseCard6">
-                            <h6 class="m-0 font-weight-bold text-primary">6. Incorporar bienes</h6>
-                        </a>
-                        <div class="collapse show" id="collapseCard6">
-                            <div class="card-body">
-                                <p>Al hacer click en la opcion del menu llamada Incorporar, se muestra una tabla con el listado de todas las incorporaciones realizadas en el sistema. </p>
-                                <p class="font-weight-bold text-dark">6.1 Incorporar bienes</p>
-                                <p>En la parte superior derecha de la tabla, se encuentra un botón "Incorporar". Al hacer click se muestra un formulario en donde se introducen los datos para la incorporación del bien.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 mb-1">
-                    <div class="card shadow mb-4">
-                        <a href="#collapseCard7" class="d-block card-header py-3" data-toggle="collapse"
-                            role="button" aria-expanded="true" aria-controls="collapseCard7">
-                            <h6 class="m-0 font-weight-bold text-primary">7. Desincorporar bienes</h6>
-                        </a>
-                        <div class="collapse show" id="collapseCard7">
-                            <div class="card-body">
-                                <p>Al hacer click en la opcion del menu llamada Desincorporar, se muestra una tabla con el listado de todas las desincorporaciones realizadas en el sistema. </p>
-                                <p class="font-weight-bold text-dark">7.1 Desincorporar bienes</p>
-                                <p>En la parte superior derecha de la tabla, se encuentra un botón "Desincorporar". Al hacer click se muestra un formulario en donde se introducen los datos para la desincorporación de los bienes en el sistema.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 mb-1">
-                    <div class="card shadow mb-4">
-                        <a href="#collapseCard8" class="d-block card-header py-3" data-toggle="collapse"
-                            role="button" aria-expanded="true" aria-controls="collapseCard8">
-                            <h6 class="m-0 font-weight-bold text-primary">8. Reasignar bienes</h6>
-                        </a>
-                        <div class="collapse show" id="collapseCard8">
-                            <div class="card-body">
-                                <p>Al hacer click en la opcion del menu llamada Reasignar, se muestra una tabla con el listado de todas las reasignaciones realizadas en el sistema. </p>
-                                <p class="font-weight-bold text-dark">8.1 Reasignar bienes</p>
-                                <p>En la parte superior derecha de la tabla, se encuentra un botón "Reasignar". Al hacer click se muestra un formulario en donde se introducen los datos para la reasignación del bien.</p>
+                                <hr>
+                                <h6 class="m-0 font-weight-bold text-primary">6.2. Asignar bien</h6>
+                                <hr>
+                                <p class="font-weight-bold text-dark">6.2.1 Consultar asignaciones</p>
+                                <p>Haciendo click en el sub menú de gestionar bienes , se muestra una tabla con el listado de todos los bienes que se encuentran asignados a una dependencia.</p>
+                                <p class="font-weight-bold text-dark">6.2.2 Registrar asignaciones</p> 
+                                <p>En la parte superior derecha de la tabla de asignaciones se encuentra un botón "Agregar". Haciendo click en el se muestra un formulario para introducir los datos de los bienes y la dependencia a la cual sera asignado</p>
+                                <hr>
+                                <h6 class="m-0 font-weight-bold text-primary">6.3 Deincorporar bien</h6>
+                                <hr>
+                                <p class="font-weight-bold text-dark">6.3.1 Consultar Desincorporaciones</p>
+                                <p>Haciendo click en el sub menú de gestionar bienes , se muestra una tabla con el listado de todos los bienes que se encuentran desincorporados de las dependencias.</p>
+                                <p class="font-weight-bold text-dark">6.3.2 Registrar Desincorporaciones</p> 
+                                <p>En la parte superior derecha de la tabla de desincorporaciones se encuentra un botón "Agregar". Haciendo click en el se muestra un formulario para introducir los datos de los bienes y la dependencia se la cual se desincorporará el mismo</p>
+                                <hr>
+                                <h6 class="m-0 font-weight-bold text-primary">6.4 Reasignar bien</h6>
+                                <hr>
+                                <p class="font-weight-bold text-dark">6.4.1 Consultar Reasignaciones</p>
+                                <p>Haciendo click en el sub menú de gestionar bienes , se muestra una tabla con el listado de todos los bienes que se encuentran Reasignados y la información de la dependencia.</p>
+                                <p class="font-weight-bold text-dark">6.4.2 Registrar Reasignaciones</p> 
+                                <p>En la parte superior derecha de la tabla de reasignaciones se encuentra un botón "Agregar". Haciendo click en el se muestra un formulario para introducir los datos del bien y la dependencia a la cual sera reasignado</p>
                             </div>
                         </div>
                     </div>
@@ -166,15 +161,61 @@
                     <div class="card shadow mb-4">
                         <a href="#collapseCard9" class="d-block card-header py-3" data-toggle="collapse"
                             role="button" aria-expanded="true" aria-controls="collapseCard9">
-                            <h6 class="m-0 font-weight-bold text-primary">9. Reportes</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">7.Generar Reportes</h6>
                         </a>
                         <div class="collapse show" id="collapseCard9">
                             <div class="card-body">
-                                <p>En el menú principal se encuentra la opción de reportes. Dentro, se muestra la vista con los botones para generar los distintos reportes en documentos PDF. Al hacer click en un reporte, automaticamente se genera el documento PDF y se muestra en una ventana nueva. </p>
-                                <p class="font-weight-bold text-dark">9.1 Descargar reportes</p>   
-                                <p>El botón para descargar el reporte se encuentra en la parte superior derecha del documento. Posteriormente se selecciona el directorio donde se guardará y se escribe el nombre del documento en caso de que requiera cambiarlo.</p>
-                                <p class="font-weight-bold text-dark">6.2 Imprimir reportes</p>
-                                <p>Luego de abrir un reporte, el botón para imprimir está ubicado en la parte superior derecha del documento.</p>
+                                <p class="font-weight-bold text-dark">7.1 Reportes de asignación</p>   
+                                <p>Haciendo click en el sub menú de reportes de asignación , se muestra dos casillas las cuales se deberan llenar con las fechas cuyo rango se quiere generar un reporte de asignación de los bienes.</p>
+                                <p class="font-weight-bold text-dark">7.2 Reportes de desincorporación</p>
+                                <p>Haciendo click en el sub menú de reportes de desincorporación , se muestra dos casillas las cuales se deberan llenar con las fechas cuyo rango se quiere generar un reporte de desincorporación de los bienes.</p>
+                                <p class="font-weight-bold text-dark">7.2 Reportes de Reasignación</p>
+                                <p>Haciendo click en el sub menú de reportes de reasignación, se muestra dos casillas las cuales se deberan llenar con las fechas cuyo rango se quiere generar un reporte de reasignación de los bienes.</p>
+                                <p class="font-weight-bold text-dark">7.2 Reportes de inventario por dependencia</p>
+                                <p>Haciendo click en el sub menú de inventario por dependencia , se muestran tres casillas de las cuales en una se debe seleccionar la dependencia de la cual se quiere generar el reporte de bienes y las otras dos se deberan llenar con las fechas cuyo rango se quiere generar el reporte.</p>
+                                <p class="font-weight-bold text-dark">7.2 Reportes de inventario general</p>
+                                <p>Haciendo click en el sub menú de inventario general , se muestra un boton el cual al presionar genera un archivo pdf con el inventario de todos los bienes registrados.</p>
+                                <p class="font-weight-bold text-dark">7 Generar estadísticas</p>
+                                <p>Haciendo click en el sub menú de generar estadísticas , se muestra dos casillas las cuales se deberan llenar con las fechas cuyo rango se quiere generar las estadísticas de asignación y desincorporación de los bienes diriguiendonos a otra pantalla con dichas estadísticas.</p>
+                                <p class="font-weight-bold text-dark">7.2 Consultar bitácora</p>
+                                <p>Haciendo click en el sub menú de consultar bitácora , se muestra una tabla con todos los movimientos realizados por los usuarios dentro del sistema .</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 mb-1">
+                    <div class="card shadow mb-4">
+                        <a href="#collapseCard2" class="d-block card-header py-3" data-toggle="collapse"
+                            role="button" aria-expanded="true" aria-controls="collapseCard2">
+                            <h6 class="m-0 font-weight-bold text-primary">8. Gestionar seguridad</h6>
+                        </a>
+                        <div class="collapse show" id="collapseCard2">
+                            <div class="card-body">
+                                <p class="font-weight-bold text-dark">8.1 Consultar roles</p> 
+                                <p>Al ingresar en el módulo de encargados, se puede observar una tabla con el listado de todos los roles registrados en el sistema. </p>
+                                <p class="font-weight-bold text-dark">8.2 Registrar roles</p>
+                                <p>En la parte superior derecha de la tabla de roles se encuentra un botón "Agregar". Haciendo click en el se muestra un formulario para introducir los datos del rol que se va a registrar.</p>
+                                <p class="font-weight-bold text-dark">8.3 Editar roles</p>
+                                <p>La última columna de la tabla de roles, contiene las opciones para cada registro. Entre ellas se encuentra un botón de editar con el icono de un lapiz. Haciendo click se mostrará un formulario con las opciones disponibles para editar el registro.</p>
+                                <p class="font-weight-bold text-dark">8.4 Eliminar roles</p>
+                                <p>La última columna de la tabla de roles, contiene las opciones para cada registro. Entre ellas se encuentra un botón (color rojo) de eliminar con el icono de una papelera. Haciendo click se mostrará una alerta de confirmación para eliminar el registro.</p>
+                                <p class="font-weight-bold text-dark">8.4 Agregar permisos</p>
+                                <p>La última columna de la tabla de roles, contiene las opciones para cada registro. Entre ellas se encuentra un botón de agregar permisos con el icono de una llave. Haciendo click se mostrará una pantalla donde al marcar las casillas de cada permiso y enviar la informacion se guardaran los permisos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 mb-1">
+                    <div class="card shadow mb-4">
+                        <a href="#collapseCard2" class="d-block card-header py-3" data-toggle="collapse"
+                            role="button" aria-expanded="true" aria-controls="collapseCard2">
+                            <h6 class="m-0 font-weight-bold text-primary">9. Configuración</h6>
+                        </a>
+                        <div class="collapse show" id="collapseCard2">
+                            <div class="card-body">
+                                <p>En la esquina superior derecha se encuentra un botón con el nombre del usuario, al hacer click se desplegará un menú con diferentes opciones al pulsar configuración se mostrará una pantalla en la cual apareceran diferentes botones para ingresar la información necesaria para el buen funcionamiento del sistema. 
+                                    Cada uno de estas secciones con su formulario para registrar la información, igualmente el apartado para editar la información y eliminar la misma. </p>
                             </div>
                         </div>
                     </div>

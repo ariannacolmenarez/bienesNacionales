@@ -1,6 +1,6 @@
 <?php 
 
-	class desincorporar extends Controllers{
+	class desincorporar extends load{
 		public function __construct()
 		{
 			if(!in_array("Consultar Desincorporar Bien", $_SESSION['bn_permisos'])){

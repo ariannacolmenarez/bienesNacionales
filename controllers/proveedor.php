@@ -1,6 +1,6 @@
 <?php 
 
-	class proveedor  extends Controllers{
+	class proveedor  extends Load{
 		
 		private $model;
 		public function __construct()

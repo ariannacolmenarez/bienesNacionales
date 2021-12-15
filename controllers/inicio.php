@@ -1,6 +1,6 @@
 <?php 
 
-	class inicio extends Controllers{
+	class inicio extends Load{
 		
 		public function __construct()
 		{

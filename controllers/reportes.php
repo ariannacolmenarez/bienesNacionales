@@ -1,7 +1,7 @@
 <?php 
 	require_once('./models/pdfModel.php');
 	require_once('./models/incorporarModel.php');
-	class reportes extends Controllers{
+	class reportes extends Load{
 
 		public function __construct()
 		{

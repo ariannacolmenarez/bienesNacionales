@@ -1,6 +1,6 @@
 <?php 
 
-	class denominacion extends Controllers{
+	class denominacion extends Load{
 		private $model;
 		public function __construct()
 		{

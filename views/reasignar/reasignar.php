@@ -7,7 +7,7 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
+            <?php echo $_SESSION['bn_imagen'];?>
             <!-- Titulo -->
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
                 <h1 class="h3 mb-0 text-gray-800"><?= $data['page_title']; ?></h1>

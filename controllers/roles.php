@@ -1,6 +1,6 @@
 <?php 
 	require_once('./models/modulosModel.php');
-	class roles extends Controllers{
+	class roles extends Load{
 		private $model;
 		
 		public function __construct()

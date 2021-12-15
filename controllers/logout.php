@@ -1,6 +1,6 @@
 <?php 
 
-	class logout extends Controllers{
+	class logout extends Load{
 		public function __construct()
 		{
 			parent::__construct();

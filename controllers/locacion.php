@@ -1,6 +1,6 @@
 <?php 
 
-	class locacion extends Controllers{
+	class locacion extends Load{
 		
 		private $model;
 		public function __construct()

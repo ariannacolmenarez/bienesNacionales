@@ -1,6 +1,6 @@
 <?php 
 
-	class bitacora extends Controllers{
+	class bitacora extends Load{
 		public function __construct()
 		{
 			parent::__construct();

@@ -1,6 +1,6 @@
 <?php 
 
-	class clasificacionCat extends Controllers{
+	class clasificacionCat extends Load{
 		private $model; 
 		public function __construct()
 		{

@@ -16,11 +16,9 @@
                 
                 if ($result["$campo"] = $resultado && $result["estado"]== 0 ) {
                    $estado=1;
-                    $consulta="UPDATE $tabla SET estado=? WHERE $campo = '$resultado' and estado = 0";
-                    parent::conect()->prepare($consulta)->execute(array(
-                    $estado )); 
-                    echo "null";
-                    return null;
+                    $consulta="DELETE FROM $tabla WHERE $campo = '$resultado' and estado = 0";
+                    parent::conect()->prepare($consulta)->execute(); 
+                    return true;
                 }else{
                     return false;
                 }

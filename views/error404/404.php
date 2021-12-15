@@ -19,15 +19,25 @@
 
 </head>
 
-<body id="page-top" class="bg-light">
+<body>
 
-    <div class="w-100 d-flex justify-content-center align-items-center" style="height: 100vh;">
-        <div class="text-center">
-            <div class="error mx-auto" data-text="404">404</div>
-            <p class="lead text-gray-800 mb-5">Página no encontrada</p>
-            <p class="text-gray-500 mb-0">Parece que encontraste un error...</p>
-            <a href="inicio">&larr; Volver al inicio</a>
+<div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-4 col-xs-12 ">
+                <div class="text-center mt-5 ">
+                    <h1 class="font-italic font-weight-bold text-primary">MANTENIMIENTO</h1>
+                    <div class="spinner-border my-2" style="width: 3rem; height: 3rem;" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <h6>Lo sentimos la plataforma se encuentra en mantenimiento en estos momentos</h6>
+                    <a href="inicio" class="btn btn-primary btn-lg mt-2">&larr; Volver al inicio</a>
+                </div>
+            </div>
+            <div class="col-md-8 col-xs-12">
+                <img src="assets/img/11104.jpg" class="img-fluid">
+            </div>
         </div>
+        
     </div>
 
 

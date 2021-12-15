@@ -1,6 +1,6 @@
 <?php 
 
-	class clasificacionDep extends Controllers{
+	class clasificacionDep extends Load{
 		private $model;
 		public function __construct()
 		{

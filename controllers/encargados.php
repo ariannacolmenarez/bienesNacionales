@@ -1,6 +1,6 @@
 <?php 
 
-	class encargados extends Controllers{
+	class encargados extends Load{
 		
 		private $model;
 		public function __construct()

@@ -1,6 +1,6 @@
 <?php 
 	
-	class cargos extends Controllers{
+	class cargos extends Load{
         private $model;
 		public function __construct()
 		{

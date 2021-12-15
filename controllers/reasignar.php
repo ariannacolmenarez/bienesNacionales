@@ -1,6 +1,6 @@
 <?php 
 
-	class reasignar extends Controllers{
+	class reasignar extends Load{
 		public function __construct()
 		{
 			if(!in_array("Consultar Reasignar Bien", $_SESSION['bn_permisos'])){

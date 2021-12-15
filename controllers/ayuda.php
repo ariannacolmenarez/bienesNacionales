@@ -1,6 +1,6 @@
 <?php 
 
-	class ayuda extends Controllers{
+	class ayuda extends Load{
 		public function __construct()
 		{
 			parent::__construct();
