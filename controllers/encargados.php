@@ -31,14 +31,14 @@
 					<td>'.$r->telefono.'</td>
 					<td><div class="row">
 						'. (in_array("Modificar Encargados", $_SESSION['bn_permisos']) ? '
-						<a class="col-lg-3 col-md-5 col-xs-6" href="'.BASE_URL.'encargados/modificarEncargado?c='.$r->id_encargado.'"><button class=" btn btn-warning btn-sm mx-1" title="Editar" >
+						<a class="col-lg-3 col-md-5 col-xs-6" href="'.BASE_URL.'encargados/modificarEncargado?c='.builder::encriptar($r->id_encargado).'"><button class=" btn btn-warning btn-sm mx-1" title="Editar" >
 							<i class="fas fa-pencil-alt"></i>
 						</button></a>
 						
 						':'').'
 					   
 					   	'. (in_array("Eliminar Encargados", $_SESSION['bn_permisos']) ? '
-						<a class="col-lg-3 col-md-5 col-xs-6" href="'.BASE_URL.'encargados/eliminar?c='.$r->id_encargado.'" onclick="return confirmar();" ><button  class=" btn btn-danger btn-sm mx-1" title="Editar" >
+						<a class="col-lg-3 col-md-5 col-xs-6" href="'.BASE_URL.'encargados/eliminar?c='.builder::encriptar($r->id_encargado).'" onclick="return confirmar();" ><button  class=" btn btn-danger btn-sm mx-1" title="Editar" >
 							<i class="fas fa-trash-alt"></i>
 						</button></a>
 						
@@ -80,7 +80,8 @@
 			if (!empty($_POST['nombre'] || $_POST['apellido'] || $_POST['cedula'] || $_POST['cargo'] || $_POST['telefono'])) {
 
 				$p=new encargadosModel();
-				$p->setid_encargado($_GET['c']);
+				$id=builder::desencriptar($_GET['c']);
+				$p->setid_encargado($id);
             	$p->setnombre(strtoupper($_POST['nombre']));
             	$p->setapellido(strtoupper($_POST['apellido']));            
             	$p->setid_cargo($_POST['cargo']);

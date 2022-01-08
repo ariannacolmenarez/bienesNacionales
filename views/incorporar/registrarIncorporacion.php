@@ -26,11 +26,6 @@
                     <form method="POST" action="<?= BASE_URL; ?>incorporar/guardar" id="form_asignar" >
                         <div class="form-row justify-content-md-center">
                             <div class="form-group col-md-4">
-                                <label for="num_movimiento">N Movimiento</label>
-                                <input type="text" class="form-control bg-light"  name="num_movimiento" placeholder="codigo generado" disabled>
-                            </div>
-                        
-                            <div class="form-group col-md-4">
                                 <label for="num_entrega">Número Entrega</label>
                                 <input type="text" class="form-control bg-light"  name="num_entrega" id="num_entrega" placeholder="Numero de entrega">
                             </div>

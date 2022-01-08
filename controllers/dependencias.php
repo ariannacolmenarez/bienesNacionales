@@ -30,13 +30,13 @@
 				   <td>'.$r->cedula.'</td>
 				   <td><div class="row">
 				   		'. (in_array("Modificar Configuracion", $_SESSION['bn_permisos']) ? '
-						<a class="col-lg-3 col-md-5 col-xs-6" href="'.BASE_URL.'dependencias/modificarDependencias?c='.$r->codigo_dependencia.'"><button class=" btn btn-warning btn-sm mx-1" title="Editar" >
+						<a class="col-lg-3 col-md-5 col-xs-6" href="'.BASE_URL.'dependencias/modificarDependencias?c='.builder::encriptar($r->codigo_dependencia).'"><button class=" btn btn-warning btn-sm mx-1" title="Editar" >
 							<i class="fas fa-pencil-alt"></i>
 						</button></a>
 						':'').'
 					   
 					   	'. (in_array("Eliminar Configuracion", $_SESSION['bn_permisos']) ? '
-						   <a class="col-lg-3 col-md-5 col-xs-6" href="'.BASE_URL.'dependencias/eliminar?c='.$r->codigo_dependencia.'" onclick="return confirmar();"><button class=" btn btn-danger btn-sm mx-1" title="Eliminar" >
+						   <a class="col-lg-3 col-md-5 col-xs-6" href="'.BASE_URL.'dependencias/eliminar?c='.builder::encriptar($r->codigo_dependencia).'" onclick="return confirmar();"><button class=" btn btn-danger btn-sm mx-1" title="Eliminar" >
 						   		<i class="fas fa-trash-alt"></i>
 					   		</button></a>
 						   ':'').'
@@ -96,7 +96,8 @@
 			if (!empty($_POST['clasificacion'] || $_POST['nombre'] || $_POST['locacion'] || $_POST['observacion'] || $_POST['cedula'])) {
 
 				$p=new dependenciasModel();
-				$p->setcodigo($_GET['c']);
+				$id=builder::desencriptar($_GET['c']);
+				$p->setcodigo($id);
             	$p->setclasificacion($_POST['clasificacion']);
             	$p->setnombre(strtoupper($_POST['nombre']));            
             	$p->setobservacion(strtoupper($_POST['observacion']));

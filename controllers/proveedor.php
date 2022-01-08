@@ -30,13 +30,13 @@
                    <td>'.$r->direccion.'</td>
                        <td><div class="row">
 					   '. (in_array("Modificar Configuracion", $_SESSION['bn_permisos']) ? '
-                       <a class="col-lg-2 col-md-2 col-xs-6" href="'.BASE_URL.'proveedor/modificarproveedores?c='.$r->id_proveedor.'"><button class=" btn btn-warning btn-sm mx-1" title="Editar" >
+                       <a class="col-lg-2 col-md-2 col-xs-6" href="'.BASE_URL.'proveedor/modificarproveedores?c='.builder::encriptar($r->id_proveedor).'"><button class=" btn btn-warning btn-sm mx-1" title="Editar" >
                            <i class="fas fa-pencil-alt"></i>
                        </button></a>
 					   ':'').'
 					   
 					   	'. (in_array("Eliminar Configuracion", $_SESSION['bn_permisos']) ? '
-						<a class="col-lg-2 col-md-2 col-xs-6" href="'.BASE_URL.'proveedor/eliminar?c='.$r->id_proveedor.'" onclick="return confirmar();" ><button  class=" btn btn-danger btn-sm mx-1" title="Editar" >
+						<a class="col-lg-2 col-md-2 col-xs-6" href="'.BASE_URL.'proveedor/eliminar?c='.builder::encriptar($r->id_proveedor).'" onclick="return confirmar();" ><button  class=" btn btn-danger btn-sm mx-1" title="Editar" >
 							<i class="fas fa-trash-alt"></i>
 						</button></a>
 						':'').'
@@ -74,7 +74,8 @@
 			if (!empty( $_POST['rif'] && $_POST['direccion'] )) {
 				
 				$p=new proveedorModel();
-				$p->setid_proveedor($_GET['c']);
+				$id=builder::desencriptar($_GET['c']);
+				$p->setid_proveedor($id);
             	$p->setproveedores(strtoupper($_POST['proveedores']));
                 $p->setrif(strtoupper($_POST['rif']));
                 $p->setdireccion(strtoupper($_POST['direccion']));

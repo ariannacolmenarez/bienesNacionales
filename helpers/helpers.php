@@ -60,4 +60,15 @@
 		return $cantidad;
 	}
 
+	function encriptarContrasena($password)
+    {
+        $salida = password_hash($password, PASSWORD_DEFAULT, ['cost' => 6]);
+        return $salida;
+    }
+    function verificarContrasena($password_verificar, $password)
+    {
+        $salida = password_verify($password_verificar, $password);
+        return $salida;
+    }
+
 ?>

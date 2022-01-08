@@ -2,7 +2,9 @@
   border-radius: 50%;     /* Make it a circle */
   padding-bottom: 100%;   /* 100% height (ratio 1) */
 }
-
+a[disabled="disabled"] {
+  pointer-events: none;
+}
 .switchBtn {
   position: relative;
   display: inline-block;

@@ -30,7 +30,7 @@
 					 	<div class="row">
 						'. (in_array("Modificar Actas", $_SESSION['bn_permisos']) ? '
 							<div class="col-3">
-								<a  href="'.BASE_URL.'bienes/modificarBienes?c='.$r->num_acta.'">
+								<a  href="'.BASE_URL.'bienes/modificarBienes?c='.builder::encriptar($r->num_acta).'">
 									<button class=" btn btn-warning btn-sm mx-1" title="Editar" >
 										<i class="fas fa-pencil-alt"></i>
 									</button>
@@ -40,7 +40,7 @@
 					   
 					   	'. (in_array("Eliminar Actas", $_SESSION['bn_permisos']) ? '
 						   <div class="col-3">
-								<a  href="'.BASE_URL.'bienes/eliminar?c='.$r->num_acta.'" onclick="return confirmar();">
+								<a  href="'.BASE_URL.'bienes/eliminar?c='.builder::encriptar($r->num_acta).'" onclick="return confirmar();">
 									<button class=" btn btn-danger btn-sm mx-1" title="Eliminar" >
 										<i class="fas fa-trash-alt"></i>
 									</button>
@@ -133,7 +133,8 @@
 			if (!empty($_POST['codigo'] && $_POST['nombre'] && $_POST['fecha'] && $_POST['cantidad'] && $_POST['id_tipo'] && $_POST['codigo_categoria'])) {
 
 				$p=new bienesModel();
-				$p->setnum_acta($_GET['c']);
+				$id=builder::desencriptar($_GET['c']);
+				$p->setnum_acta($id);
 				$p->setcodigo($_POST['codigo']);            
 				$p->setnombre(strtoupper($_POST['nombre']));
 				$p->setcantidad($_POST['cantidad']);

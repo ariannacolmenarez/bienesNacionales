@@ -31,7 +31,7 @@
 				   <td>'.$r->estados.'</td>
 				   <td><div class="row">
 						'. (in_array("Modificar Usuarios", $_SESSION['bn_permisos']) ? '
-								<a class="col-lg-3 col-md-5 col-xs-6" href="'.BASE_URL.'bienes/modificarBienes?c='.$r->num_acta.'">
+								<a class="col-lg-3 col-md-5 col-xs-6" href="'.BASE_URL.'bienes/modificarBienes?c='.builder::encriptar($r->num_acta).'">
 									<button class=" btn btn-warning btn-sm mx-1" title="Editar" >
 										<i class="fas fa-pencil-alt"></i>
 									</button>
@@ -39,7 +39,7 @@
 						':'').'
 					   
 					   	'. (in_array("Eliminar Usuarios", $_SESSION['bn_permisos']) ? '
-								<a class="col-lg-3 col-md-5 col-xs-6" href="'.BASE_URL.'bienes/eliminar?c='.$r->num_acta.'&a='.$r->codigo.'" onclick="return confirmar();">
+								<a class="col-lg-3 col-md-5 col-xs-6" href="'.BASE_URL.'bienes/eliminar?c='.builder::encriptar($r->num_acta).'&a='.builder::encriptar($r->codigo).'" onclick="return confirmar();">
 									<button class=" btn btn-danger btn-sm mx-1" title="Eliminar" >
 										<i class="fas fa-trash-alt"></i>
 									</button>
@@ -139,7 +139,8 @@
 		public function actualizar(){
 			if (!empty( $_POST['fecha'] )) {
 				$p=new actaModel();
-				$p->setnum_acta($_GET['c']);
+				$id=builder::desencriptar($_GET['c']);
+				$p->setnum_acta($id);
                 $p->setfecha($_POST['fecha']);
 				if(!empty($_POST['num_factura'])){
 					$p->setnum_factura($_POST['num_factura']);

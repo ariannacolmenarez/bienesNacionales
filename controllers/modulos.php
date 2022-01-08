@@ -70,7 +70,8 @@
 			if (!empty($_POST['nombre'] || $_POST['descripcion'] )) {
 
 				$p=new modulosModel();
-				$p->setid_modulo($_GET['c']);
+				$id=builder::desencriptar($_GET['c']);
+				$p->setid_modulo($id);
             	$p->setnombre(strtoupper($_POST['nombre']));
             	$p->setdescripcion(strtoupper($_POST['descripcion']));            
 

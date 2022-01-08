@@ -26,13 +26,13 @@
                    <td>'.$r->tipo.'</td>
                        <td><div class="row">
 					   '. (in_array("Modificar Configuracion", $_SESSION['bn_permisos']) ? '
-                       <a class="col-lg-2 col-md-2 col-xs-6" href="'.BASE_URL.'tipoBien/modificartipoBien?c='.$r->id_tipo.'"><button class=" btn btn-warning btn-sm mx-1" title="Editar" >
+                       <a class="col-lg-2 col-md-2 col-xs-6" href="'.BASE_URL.'tipoBien/modificartipoBien?c='.builder::encriptar($r->id_tipo).'"><button class=" btn btn-warning btn-sm mx-1" title="Editar" >
                            <i class="fas fa-pencil-alt"></i>
                        </button></a>
 					   ':'').'
 					   
 					   	'. (in_array("Eliminar Configuracion", $_SESSION['bn_permisos']) ? '
-						<a class="col-lg-2 col-md-2 col-xs-6" href="'.BASE_URL.'tipoBien/eliminar?c='.$r->id_tipo.'" onclick="return confirmar();" ><button  class=" btn btn-danger btn-sm mx-1" title="Editar" >
+						<a class="col-lg-2 col-md-2 col-xs-6" href="'.BASE_URL.'tipoBien/eliminar?c='.builder::encriptar($r->id_tipo).'" onclick="return confirmar();" ><button  class=" btn btn-danger btn-sm mx-1" title="Editar" >
 							<i class="fas fa-trash-alt"></i>
 						</button></a>
 						':'').'
@@ -66,9 +66,10 @@ echo "if";
         public function actualizar(){
 			
 			if (!empty($_POST['tipo'] )) {
-				echo ($_POST['tipo']);
+				
 				$p=new tipoBienModel();
-				$p->setid_tipo($_GET['c']);
+				$id=builder::desencriptar($_GET['c']);
+				$p->setid_tipo($id);
             	$p->settipo(strtoupper($_POST['tipo']));
 				$this->model->modificar($p);
 				$_SESSION["mensaje"] = "¡Tipo de Bien actualizado correctamente!";

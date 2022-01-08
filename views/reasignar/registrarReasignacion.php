@@ -26,10 +26,6 @@
                 <form method="POST" action="<?= BASE_URL; ?>reasignar/guardar" id="form_reasignar">
                         <div class="form-row">
                             <div class="form-group col-md-4">
-                                <label for="movimiento">Movimiento</label>
-                                <input type="text" class="form-control bg-light" name="movimiento" placeholder="Número generado" disabled>
-                            </div>
-                            <div class="form-group col-md-4">
                                 <label for="tipo" title="Tipo reasignacion">Tipo de reasignacion</label>
                                 <select class="form-control bg-light" name="tipo" id="tipo">
                                     <option selected disabled>Seleccione una dependencia</option>

@@ -25,11 +25,7 @@
                 <div class="card-body">
                     <form method="POST" action="<?= BASE_URL; ?>dependencias/guardar" id="form_dependencia">
                         <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="codigo"><b>Código</b></label>
-                                <input type="text" class="form-control bg-light" name="codigo" placeholder="Código generado" disabled>
-                            </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-4">
                                 <label for="clasificacion"><b>Clasificacion</b></label>
                                 <select class="form-control bg-light" name="clasificacion" id="clasificacion">
                                     <option selected disabled>Seleccione Clasificacion de la dependencia</option>
@@ -37,11 +33,11 @@
                                 </select>
                                 <span class="error3"></span>
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-4">
                                 <label for="dependencia"><b>Dependencia</b></label>
                                 <input type="text" class="form-control bg-light" name="nombre" id="nombre" placeholder="Escriba el nombre de la dependencia">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-4">
                                 <label for="locacion"><b>Edificio / Locacion</b></label>
                                 <select class="form-control bg-light" name="locacion" id="locacion">
                                     <option selected disabled>Seleccione locacion de la dependencia</option>

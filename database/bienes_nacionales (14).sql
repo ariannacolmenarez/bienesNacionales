@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-11-2021 a las 13:04:32
--- Versión del servidor: 10.4.19-MariaDB
--- Versión de PHP: 8.0.6
+-- Tiempo de generación: 05-01-2022 a las 02:12:50
+-- Versión del servidor: 10.4.14-MariaDB
+-- Versión de PHP: 7.4.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -45,7 +45,58 @@ CREATE TABLE `acta` (
 --
 
 INSERT INTO `acta` (`num_acta`, `fecha`, `num_factura`, `fecha_factura`, `factura`, `num_ordenC`, `fecha_ordenC`, `num_ordenP`, `id_proveedor`, `estado`) VALUES
-(105, '2021-11-10', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0);
+(46, '2021-10-13', 2147483647, '0000-00-00', '', 0, 0, 0, 0, 0),
+(47, '2021-10-12', 22222, '0000-00-00', '', 0, 0, 0, 0, 0),
+(48, '2021-10-01', 2342343, '0000-00-00', '', 0, 0, 0, 0, 0),
+(49, '2021-10-06', 11111111, '0000-00-00', '', 0, 0, 0, 0, 0),
+(50, '2021-10-12', 3434444, '0000-00-00', '', 0, 0, 0, 0, 0),
+(51, '2021-10-12', 3434444, '0000-00-00', '', 0, 0, 0, 0, 0),
+(52, '2021-10-20', 1111111112, '0000-00-00', '', 0, 0, 0, 0, 0),
+(53, '2021-10-07', 33333, '0000-00-00', '', 0, 0, 0, 0, 0),
+(54, '2021-10-20', 234234, '0000-00-00', '', 0, 0, 0, 0, 0),
+(55, '2021-10-11', 5555555, '0000-00-00', '', 0, 0, 0, 0, 0),
+(56, '2021-10-02', 5555555, '0000-00-00', '', 0, 0, 0, 0, 0),
+(59, '2021-10-14', 23423411, '0000-00-00', '', 0, 0, 0, 0, 0),
+(60, '2021-10-18', 2342342, '0000-00-00', '', 0, 0, 0, 0, 0),
+(61, '2021-10-05', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(62, '2021-10-13', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(63, '2021-10-06', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(64, '2021-10-06', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(65, '2021-10-12', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(66, '2021-10-13', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(67, '2021-10-06', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(68, '2021-10-11', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(69, '2021-10-06', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(70, '2021-10-05', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(74, '2021-11-24', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(75, '2021-11-17', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(76, '2021-11-09', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(77, '2021-11-10', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(78, '2021-11-10', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(79, '2021-11-10', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(80, '2021-11-10', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(81, '2021-11-16', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(82, '2021-10-07', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(83, '2021-10-13', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(84, '2021-10-14', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(85, '2021-10-06', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(86, '2021-10-05', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(87, '2021-10-05', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(88, '2021-10-06', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(89, '2021-10-12', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(90, '2021-10-13', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(91, '2021-10-06', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(92, '2021-10-12', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(93, '2021-10-07', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(94, '2021-10-06', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(95, '2021-10-13', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(96, '2021-10-13', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(97, '2021-10-13', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(98, '2021-10-07', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(99, '2021-10-21', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(100, '2021-10-13', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(101, '2021-10-07', 0, '0000-00-00', '', 0, 0, 0, 0, 0),
+(102, '2021-10-06', 0, '0000-00-00', '', 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -66,7 +117,8 @@ CREATE TABLE `asignacion` (
 --
 
 INSERT INTO `asignacion` (`id_asignacion`, `codigo_dependencia`, `num_movimiento`, `codigo_bien`, `estado`) VALUES
-(30, 55454666, 30, 123, 0);
+(28, 55454665, 28, 1232226, 1),
+(29, 55454665, 29, 1231, 1);
 
 --
 -- Disparadores `asignacion`
@@ -103,12 +155,11 @@ CREATE TABLE `asignacion_descripcion` (
 INSERT INTO `asignacion_descripcion` (`num_movimiento`, `fecha`, `prestamo`, `num_entrega`, `estado`) VALUES
 (23, '2021-10-14', '88990', 12313, 0),
 (24, '2021-11-11', '234234', 23423, 0),
-(25, '2021-11-19', '88990', 12312, 1),
+(25, '2021-11-19', '88990', 12312, 0),
 (26, '2021-11-11', '88990', 3462, 1),
 (27, '2021-11-10', '213123', 212, 0),
-(28, '2021-10-09', '33231', 222, 0),
-(29, '2021-11-09', NULL, 12344, 1),
-(30, '2021-11-02', NULL, 231, 0);
+(28, '2021-10-09', '33231', 222, 1),
+(29, '2021-11-07', '63454', 4689, 1);
 
 -- --------------------------------------------------------
 
@@ -132,7 +183,22 @@ CREATE TABLE `bienes` (
 --
 
 INSERT INTO `bienes` (`codigo`, `nombre`, `descripcion`, `id_tipo`, `codigo_categoria`, `num_acta`, `estados`, `estado`) VALUES
-(123, 'MESAS', NULL, 2, 20002, 105, 'SIN ASIGNAR', 1);
+(1231, 'pantalla', 'bueno', 2, 1235, 75, 'ASIGNADO', 1),
+(12322, 'cornetas', '', 2, 1234, 88, 'SIN ASIGNAR', 1),
+(12345, 'raton', 'werwer', 2, 1234, 76, 'SIN ASIGNAR', 1),
+(44444, 'caballo', '', 3, 1234, 102, 'SIN ASIGNAR', 1),
+(112223, 'corneta', '', 1, 9, 83, '', 0),
+(123123, 'wsqewqe', 'qweqwe', 2, 1235, 74, 'SIN ASIGNAR', 0),
+(123223, 'corneta', '', 1, 1234, 84, '', 0),
+(123224, 'disco', '', 3, 1234, 88, 'SIN ASIGNAR', 1),
+(222222, 'cornetao', '', 2, 1234, 91, 'SIN ASIGNAR', 1),
+(333333, 'platos', '', 2, 1235, 101, 'SIN ASIGNAR', 1),
+(1232222, 'pintura', '', 2, 1234, 90, 'SIN ASIGNAR', 1),
+(1232223, 'plato', '', 3, 1235, 90, 'SIN ASIGNAR', 1),
+(1232224, 'pinturas', '', 2, 1234, 91, 'SIN ASIGNAR', 1),
+(1232225, 'cornetau', '', 2, 1234, 92, 'SIN ASIGNAR', 1),
+(1232226, 'cornetas', '', 2, 1234, 93, 'ASIGNADO', 1),
+(1232227, 'vaso', '', 2, 1235, 94, 'SIN ASIGNAR', 1);
 
 --
 -- Disparadores `bienes`
@@ -367,74 +433,88 @@ INSERT INTO `bitacora` (`id_bitacora`, `fecha`, `accion`, `modulo`, `usuario`) V
 (202, '2021-10-31 14:42:32', 'Registro de nuevo \"102 - 44444 - caballo\"', 'Bienes', 1),
 (203, '2021-10-31 14:45:59', 'Registro de asignacion de \"28\"', 'Asignación ', 1),
 (204, '2021-10-31 14:46:00', 'Actualización de \"93 - 1232226\"', 'Bienes', 1),
-(205, '2021-11-05 22:37:36', 'Actualización de \"33 - DANNI\"', 'Encargados', 1),
-(206, '2021-11-05 22:53:26', 'Actualización de \"17 - MARIANA\"', 'Usuarios', 1),
-(207, '2021-11-06 00:37:16', 'Registro de \"19 - JOSUE12\"', 'Usuarios', 1),
-(208, '2021-11-06 01:02:43', 'Registro de \"36 - MARIANA\"', 'Encargados', 1),
-(209, '2021-11-06 01:43:42', 'Registro de \"55454667 - MARIANA\"', 'Dependencias', 1),
-(210, '2021-11-06 02:01:53', 'Registro de \"1232\"', 'Categoria', 1),
-(211, '2021-11-06 03:47:35', 'Registro de nuevo \"103 - 111 - paola\"', 'Bienes', 1),
-(212, '2021-11-06 04:30:28', 'Actualización de \"93 - 1232226\"', 'Bienes', 1),
-(213, '2021-11-06 04:30:28', 'Actualización \"28\"', 'Asignación', 1),
-(214, '2021-11-06 04:30:28', 'Registro de \"12\"', 'Desincorporar', 1),
-(215, '2021-11-06 07:20:06', 'Actualización de \"92 - 1232225\"', 'Bienes', 1),
-(216, '2021-11-06 07:20:35', 'Registro de asignacion de \"29\"', 'Asignación ', 1),
-(217, '2021-11-06 07:20:35', 'Actualización de \"90 - 1232222\"', 'Bienes', 1),
-(218, '2021-11-06 07:36:04', 'Actualización \"29\"', 'Asignación', 1),
-(219, '2021-11-06 08:13:46', 'Registro de \"10 - ADMINISTRADOR\"', 'Roles', 1),
-(220, '2021-11-06 08:34:02', 'Registro de \"5 - MAL ESTADO\"', 'Tipo Reasignación', 1),
-(221, '2021-11-06 08:35:42', 'Actualización de \"2 - PERDIDA\"', 'Tipo Reasignación', 1),
-(222, '2021-11-06 08:38:55', 'Actualización de \"2 - MUEBLE\"', 'Tipo Bien', 1),
-(223, '2021-11-06 08:41:17', 'Registro de \"13 - HIGIENE\"', 'Clasificación Dependencia', 1),
-(224, '2021-11-06 08:41:34', 'Actualización de \"11 - INFORMATICA\"', 'Clasificación Dependencia', 1),
-(225, '2021-11-06 08:43:44', 'Registro de \"15 - HILANDERA\"', 'Locación', 1),
-(226, '2021-11-06 08:47:15', 'Actualización de \"11 - SECRETARIA\"', 'Cargo', 1),
-(227, '2021-11-06 08:47:34', 'Actualización de \"28 - GERENTE\"', 'Cargo', 1),
-(228, '2021-11-06 08:50:42', 'Registro de \"7 - PRIMERO\"', 'Denominación', 1),
-(229, '2021-11-06 08:52:02', 'Actualización de \"5 - PLUTON\"', 'Denominación', 1),
-(230, '2021-11-06 08:55:03', 'Registro de \"4 - CATEGORIA1\"', 'Clasificacion Categoría', 1),
-(231, '2021-11-06 08:55:10', 'Actualización de \"2 - MU\"', 'Clasificación Categoría', 1),
-(232, '2021-11-06 08:55:37', 'Actualización de \"2 - MU\"', 'Clasificación Categoría', 1),
-(233, '2021-11-06 08:55:59', 'Actualización de \"2 - CATEGORIA 2\"', 'Clasificación Categoría', 1),
-(234, '2021-11-06 09:40:43', 'Registro de \"55454668 - ADMINISTRACION\"', 'Dependencias', 1),
-(235, '2021-11-06 09:45:36', 'Actualización de \"1232\"', 'Categoría', 1),
-(236, '2021-11-06 09:53:12', 'Actualización de \"75 - 1231\"', 'Bienes', 1),
-(237, '2021-11-06 09:55:59', 'Actualización de \"9 - REGISTRADOR\"', 'Roles', 1),
-(238, '2021-11-06 10:12:12', 'Actualización de \"17 - MARIANA\"', 'Usuarios', 1),
-(239, '2021-11-06 10:12:23', 'Actualización de \"19 - JOSUE12\"', 'Usuarios', 1),
-(240, '2021-11-06 10:32:30', 'Registro de nuevo \"104 - 123221 - mesa\"', 'Bienes', 1),
-(241, '2021-11-06 10:41:32', 'Actualización de \"75 - 1231\"', 'Bienes', 1),
-(242, '2021-11-06 11:15:02', 'Actualización de \"75 - 1231\"', 'Bienes', 1),
-(243, '2021-11-06 11:21:11', 'Actualización de \"75 - 1231\"', 'Bienes', 1),
-(244, '2021-11-06 12:25:43', 'Actualización de \"3 - ARI\"', 'Tipo Reasignación', 1),
-(245, '2021-11-06 12:25:47', 'Actualización de \"4 - AQUIFUEX2\"', 'Tipo Reasignación', 1),
-(246, '2021-11-06 12:28:25', 'Actualización de \"6 - ADMINISTRADOR\"', 'Cargo', 1),
-(247, '2021-11-06 12:36:41', 'Actualización de \"5 - PLUTON\"', 'Denominación', 1),
-(248, '2021-11-06 12:36:44', 'Actualización de \"7 - PRIMERO\"', 'Denominación', 1),
-(249, '2021-11-06 12:38:08', 'Actualización de \"2 - MAQUINAS Y EQUIPOS ELECTRONICOS\"', 'Clasificación Categoría', 1),
-(250, '2021-11-06 12:38:34', 'Actualización de \"4 - MAQUINAS Y EQUIPOS AGRíCOLAS Y PECUARIOS\"', 'Clasificación Categoría', 1),
-(251, '2021-11-06 12:40:40', 'Actualización de \"v1234567 - CARLOS\"', 'Proveedores', 1),
-(252, '2021-11-06 12:41:41', 'Actualización de \"v1234567 - CARLOS\"', 'Proveedores', 1),
-(253, '2021-11-06 12:42:10', 'Actualización de \"v1234567 - CARLOS\"', 'Proveedores', 1),
-(254, '2021-11-06 12:42:19', 'Actualización de \"v1234567 - CARLOS\"', 'Proveedores', 1),
-(255, '2021-11-06 12:43:08', 'Actualización de \"V1234567 - CARLOS\"', 'Proveedores', 1),
-(256, '2021-11-06 12:44:10', 'Actualización de \"19 - DANIELA29\"', 'Usuarios', 1),
-(257, '2021-11-06 12:44:41', 'Actualización de \"17 - ARIANNA25\"', 'Usuarios', 1),
-(258, '2021-11-06 12:45:17', 'Actualización de \"35 - DANIELA\"', 'Encargados', 1),
-(259, '2021-11-06 12:49:28', 'Actualización de \"55454666 - ADMINISTRACION\"', 'Dependencias', 1),
-(260, '2021-11-06 12:50:18', 'Actualización de \"55454667 - LABORATORIO\"', 'Dependencias', 1),
-(261, '2021-11-06 12:50:44', 'Actualización de \"55454668 - SALON 31B\"', 'Dependencias', 1),
-(262, '2021-11-06 12:57:03', 'Registro de \"20001\"', 'Categoria', 1),
-(263, '2021-11-06 10:20:34', 'Registro de \"8 - MUEBLE\"', 'Denominación', 1),
-(264, '2021-11-06 10:20:56', 'Registro de \"20002\"', 'Categoria', 1),
-(265, '2021-11-06 10:38:59', 'Registro de nuevo \"105 - 123 - mesa\"', 'Bienes', 1),
-(266, '2021-11-06 10:40:07', 'Registro de asignacion de \"30\"', 'Asignación ', 1),
-(267, '2021-11-06 10:40:07', 'Actualización de \"105 - 123\"', 'Bienes', 1),
-(268, '2021-11-06 10:44:44', 'Actualización \"30\"', 'Asignación', 1),
-(269, '2021-11-06 10:47:05', 'Actualización de \"105 - 123\"', 'Bienes', 1),
-(270, '2021-11-06 10:48:01', 'Actualización de \"105 - 123\"', 'Bienes', 1),
-(271, '2021-11-06 10:48:01', 'Actualización \"30\"', 'Asignación', 1),
-(272, '2021-11-06 10:48:01', 'Registro de \"13\"', 'Desincorporar', 1);
+(205, '2021-11-07 22:13:04', 'Registro de asignacion de \"29\"', 'Asignación ', 1),
+(206, '2021-11-07 22:13:04', 'Actualización de \"75 - 1231\"', 'Bienes', 1),
+(207, '2021-12-15 13:22:12', 'Actualización de \"9 - SECRETARIA\"', 'Roles', 1),
+(208, '2021-12-15 13:23:20', 'Registro de \"19 - PAOLA\"', 'Usuarios', 1),
+(209, '2021-12-15 15:57:20', 'Registro de \"10 - ADMINISTRADOR\"', 'Roles', 1),
+(210, '2021-12-15 16:04:09', 'Actualización de \"13 - ARIANNA\"', 'Usuarios', 1),
+(211, '2021-12-15 16:11:31', 'Actualización de \"16 - DANIELA\"', 'Usuarios', 1),
+(212, '2021-12-15 16:16:37', 'Actualización de \"13 - ARIANNA\"', 'Usuarios', 1),
+(213, '2021-12-15 16:17:03', 'Actualización de \"13 - ARIANNA\"', 'Usuarios', 1),
+(214, '2021-12-15 16:19:47', 'Actualización de \"13 - ARIANNA\"', 'Usuarios', 1),
+(215, '2021-12-15 16:20:32', 'Actualización de \"13 - ARIANNA\"', 'Usuarios', 1),
+(216, '2021-12-15 16:28:42', 'Actualización de \"13 - ARIANNA\"', 'Usuarios', 1),
+(217, '2021-12-15 16:28:59', 'Actualización de \"13 - ARIANNA\"', 'Usuarios', 1),
+(218, '2021-12-15 16:31:47', 'Actualización de \"13 - ARIANNA\"', 'Usuarios', 1),
+(219, '2021-12-15 16:32:25', 'Actualización de \"13 - ARIANNA\"', 'Usuarios', 1),
+(220, '2021-12-15 16:36:14', 'Actualización de \"13 - ARIANNA\"', 'Usuarios', 1),
+(221, '2021-12-15 16:41:45', 'Registro de \"20 - ARIANNA\"', 'Usuarios', 1),
+(222, '2021-12-15 16:43:26', 'Registro de \"36 - ARIANNA\"', 'Encargados', 1),
+(223, '2021-12-15 16:43:45', 'Actualización de \"36 - ARIANNA\"', 'Encargados', 1),
+(279, '2021-12-30 14:57:45', 'Actualización de \"20 - SUPERUSER\"', 'Usuarios', 1),
+(280, '2021-12-30 16:32:07', 'Registro de \"21 - ARIANNA\"', 'Usuarios', 1),
+(281, '2021-12-30 17:59:48', 'Actualización de \"21 - ARIANNA\"', 'Usuarios', 1),
+(282, '2021-12-30 18:08:03', 'Actualización de \"21 - ARIANNA\"', 'Usuarios', 1),
+(283, '2021-12-30 18:12:27', 'Actualización de \"21 - ARIANNA\"', 'Usuarios', 1),
+(284, '2021-12-30 18:15:44', 'Actualización de \"16 - DANIELA\"', 'Usuarios', 1),
+(285, '2021-12-30 18:15:53', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(286, '2021-12-30 19:00:09', 'Actualización de \"21 - ARIANNA\"', 'Usuarios', 1),
+(287, '2021-12-30 19:18:22', 'Actualización de \"21 - ARIANNA\"', 'Usuarios', 1),
+(288, '2022-01-03 13:45:37', 'Actualización de \"21 - ARIANNA\"', 'Usuarios', 1),
+(289, '2022-01-03 13:58:06', 'Actualización de \"21 - ARIANNA\"', 'Usuarios', 1),
+(290, '2022-01-03 15:07:51', 'Registro de \"22 - MARIAS\"', 'Usuarios', 1),
+(291, '2022-01-03 15:24:30', 'Registro de \"23 - MARISOL\"', 'Usuarios', 1),
+(292, '2022-01-03 16:30:10', 'Actualización de \"23 - MARISOL\"', 'Usuarios', 1),
+(293, '2022-01-03 16:42:49', 'Actualización de \"21 - ARIANNA\"', 'Usuarios', 1),
+(294, '2022-01-03 16:43:22', 'Actualización de \"22 - MARIAS\"', 'Usuarios', 1),
+(295, '2022-01-03 16:51:53', 'Actualización de \"4 - AQUIFUEX2\"', 'Tipo Reasignación', 1),
+(296, '2022-01-03 17:20:23', 'Actualización de \"3 - ARI\"', 'Tipo Reasignación', 1),
+(297, '2022-01-03 17:20:40', 'Actualización de \"2 - DANI\"', 'Tipo Bien', 1),
+(298, '2022-01-03 17:23:07', 'Actualización de \"9 - SECRETARIA\"', 'Roles', 1),
+(299, '2022-01-03 17:24:10', 'Actualización de \"9 - SECRETARIA\"', 'Roles', 1),
+(300, '2022-01-04 13:28:00', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(301, '2022-01-04 13:28:23', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(302, '2022-01-04 13:49:46', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(303, '2022-01-04 13:51:45', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(304, '2022-01-04 13:53:20', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(305, '2022-01-04 13:54:47', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(306, '2022-01-04 14:03:03', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(307, '2022-01-04 14:04:34', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(308, '2022-01-04 14:05:33', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(309, '2022-01-04 14:06:14', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(310, '2022-01-04 14:06:36', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(311, '2022-01-04 14:29:36', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(312, '2022-01-04 15:16:03', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(313, '2022-01-04 15:18:41', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(314, '2022-01-04 15:19:24', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(315, '2022-01-04 15:22:06', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(316, '2022-01-04 15:24:43', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(317, '2022-01-04 15:25:30', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(318, '2022-01-04 15:29:21', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(319, '2022-01-04 15:36:42', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(320, '2022-01-04 15:38:10', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(321, '2022-01-04 16:12:50', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(322, '2022-01-04 16:13:07', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(323, '2022-01-04 16:14:34', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(324, '2022-01-04 16:15:50', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(325, '2022-01-04 16:21:17', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(326, '2022-01-04 16:27:38', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(327, '2022-01-04 16:29:49', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(328, '2022-01-04 16:31:36', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(329, '2022-01-04 16:34:13', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(330, '2022-01-04 16:35:19', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(331, '2022-01-04 16:43:57', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(332, '2022-01-04 16:47:31', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(333, '2022-01-04 16:59:04', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(334, '2022-01-04 17:00:58', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(335, '2022-01-04 17:12:28', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(336, '2022-01-04 17:13:43', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(337, '2022-01-04 17:16:44', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(338, '2022-01-04 17:25:43', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(339, '2022-01-04 17:27:34', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(340, '2022-01-04 17:30:26', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1),
+(341, '2022-01-04 17:32:48', 'Actualización de \"19 - PAOLA\"', 'Usuarios', 1);
 
 -- --------------------------------------------------------
 
@@ -453,9 +533,13 @@ CREATE TABLE `cargo` (
 --
 
 INSERT INTO `cargo` (`id_cargo`, `cargo`, `estado`) VALUES
-(6, 'ADMINISTRADOR', 1),
-(11, 'SECRETARIA', 1),
-(28, 'GERENTE', 1),
+(6, 'ADMINISTRADOR', 0),
+(11, 'SECRETARIA', 0),
+(24, 'SADCADA', 0),
+(25, 'OPERADOR', 0),
+(26, 'CAJERA', 0),
+(27, 'PERSONA', 0),
+(28, 'GENTE', 1),
 (29, 'JEFE', 1);
 
 --
@@ -482,7 +566,7 @@ CREATE TABLE `categoria_sigecof` (
   `codigo_categoria` int(11) NOT NULL,
   `presupuestaria` varchar(11) NOT NULL,
   `id_clasificacion` int(11) NOT NULL,
-  `id_denominacion` int(11) DEFAULT NULL,
+  `id_denominacion` int(11) NOT NULL,
   `estado` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -491,7 +575,16 @@ CREATE TABLE `categoria_sigecof` (
 --
 
 INSERT INTO `categoria_sigecof` (`codigo_categoria`, `presupuestaria`, `id_clasificacion`, `id_denominacion`, `estado`) VALUES
-(20002, 'escaparates', 4, 8, 1);
+(1, '123123', 1, 1, 0),
+(4, '31223120', 1, 1, 0),
+(5, '31223123', 1, 4, 0),
+(6, '54154', 1, 1, 0),
+(7, '5454', 1, 1, 0),
+(8, '5454654', 1, 1, 0),
+(9, '234234', 1, 1, 0),
+(10, '123213', 1, 1, 0),
+(1234, '123456', 1, 1, 1),
+(1235, '5678', 2, 5, 1);
 
 --
 -- Disparadores `categoria_sigecof`
@@ -524,8 +617,9 @@ CREATE TABLE `clasificacion_cat` (
 --
 
 INSERT INTO `clasificacion_cat` (`id_clasificacion`, `clasificacion`, `estado`) VALUES
-(2, 'MAQUINAS Y EQUIPOS ELECTRONICOS', 1),
-(4, 'MAQUINAS Y EQUIPOS AGRíCOLAS Y PECUARIOS', 1);
+(1, 'mueble', 0),
+(2, 'MUEBLE', 1),
+(3, 'CALL', 0);
 
 --
 -- Disparadores `clasificacion_cat`
@@ -558,8 +652,9 @@ CREATE TABLE `clasificacion_dep` (
 --
 
 INSERT INTO `clasificacion_dep` (`id_clasificacion`, `clasificacion`, `estado`) VALUES
-(11, 'INFORMATICA', 1),
-(13, 'HIGIENE', 1);
+(10, 'DEPARTAMENTO 2', 0),
+(11, 'ALVAREZ', 1),
+(12, 'DOCE', 0);
 
 --
 -- Disparadores `clasificacion_dep`
@@ -592,7 +687,10 @@ CREATE TABLE `denominacion` (
 --
 
 INSERT INTO `denominacion` (`id_denominacion`, `denominacion`, `estado`) VALUES
-(8, 'MUEBLE', 1);
+(1, 'INGRESOS ORDINARIOS', 0),
+(4, 'OTROS', 0),
+(5, 'TRECE', 1),
+(6, 'UNO', 0);
 
 --
 -- Disparadores `denominacion`
@@ -633,9 +731,8 @@ CREATE TABLE `dependencias` (
 --
 
 INSERT INTO `dependencias` (`codigo_dependencia`, `dependencia`, `observacion`, `toma_fisica`, `edicion`, `documentacion`, `fecha_chequeo`, `id_clasificacion`, `id_locacion`, `id_encargado`, `estado`) VALUES
-(55454666, 'ADMINISTRACION', '', NULL, NULL, NULL, '2021-10-13', 11, 13, 35, 1),
-(55454667, 'LABORATORIO', '', NULL, NULL, NULL, '2021-11-18', 11, 13, 34, 1),
-(55454668, 'SALON 31B', 'BUEN ESTADO', NULL, NULL, 'SI', '2021-11-25', 11, 15, 35, 1);
+(55454665, 'JOSEE', '', '', '', '', '2021-10-09', 10, 13, 33, 1),
+(55454666, 'DANI', '', '', '', '', '2021-10-13', 11, 13, 35, 1);
 
 --
 -- Disparadores `dependencias`
@@ -668,13 +765,6 @@ CREATE TABLE `desincorporar` (
   `codigo_bien` int(11) NOT NULL,
   `estado` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `desincorporar`
---
-
-INSERT INTO `desincorporar` (`num_movimiento`, `fecha`, `denuncia`, `fecha_denuncia`, `oficio`, `codigo_dependencia`, `concepto`, `codigo_bien`, `estado`) VALUES
-(13, '2021-11-06', '', '2021-11-10', '', 55454666, 'mal estado', 123, 0);
 
 --
 -- Disparadores `desincorporar`
@@ -711,9 +801,10 @@ CREATE TABLE `encargados` (
 --
 
 INSERT INTO `encargados` (`id_encargado`, `cedula`, `nombre`, `apellido`, `telefono`, `id_cargo`, `estado`) VALUES
+(33, 12245789, 'DANNI', 'PARRA', 414000752, 26, 0),
 (34, 12245788, 'MARIA', 'RAMONES', 426789453, 29, 1),
-(35, 12245648, 'DANIELA', 'GARCIA', 424356748, 28, 1),
-(36, 1224000, 'MARIANA', 'PARRA', 0, 28, 1);
+(35, 12245648, 'DANI', 'GARCIA', 424356748, 28, 1),
+(36, 27629581, 'ARIANNA', 'COLMENAREZ', 345353, 29, 0);
 
 --
 -- Disparadores `encargados`
@@ -746,8 +837,7 @@ CREATE TABLE `locacion` (
 --
 
 INSERT INTO `locacion` (`id_locacion`, `locacion`, `estado`) VALUES
-(13, 'GIRALUNA', 1),
-(15, 'HILANDERA', 1);
+(13, 'GIRALUNA', 1);
 
 --
 -- Disparadores `locacion`
@@ -816,6 +906,7 @@ INSERT INTO `permisos` (`id`, `nombre`) VALUES
 (9, 'Consultar Dependencias'),
 (23, 'Consultar Desincorporar Bien'),
 (5, 'Consultar Encargados'),
+(36, 'Consultar mantenimiento'),
 (25, 'Consultar Reasignar Bien'),
 (27, 'Consultar Reportes'),
 (28, 'Consultar Seguridad'),
@@ -864,7 +955,9 @@ CREATE TABLE `proveedor` (
 --
 
 INSERT INTO `proveedor` (`id_proveedor`, `nombre_prov`, `rif`, `direccion`, `estado`) VALUES
-(5, 'CARLOS', 'V1234567', 'BARQUISIMETO', 1);
+(2, 'DANIELA', '5656576', 'DUACA LARA', 0),
+(4, 'MARIA', '12365459', 'LARA BARQUISIMETO', 0),
+(5, 'CARLOS', '1234567', 'BARQUISIMETO', 1);
 
 --
 -- Disparadores `proveedor`
@@ -893,13 +986,6 @@ CREATE TABLE `reasignar` (
   `nueva_dependencia` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Volcado de datos para la tabla `reasignar`
---
-
-INSERT INTO `reasignar` (`id_reasignacion`, `codigo_bien`, `num_movimiento`, `nueva_dependencia`) VALUES
-(2, 123, 6, 55454666);
-
 -- --------------------------------------------------------
 
 --
@@ -913,13 +999,6 @@ CREATE TABLE `reasignar_descripcion` (
   `id_tipo` int(11) NOT NULL,
   `codigo_dependencia` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Volcado de datos para la tabla `reasignar_descripcion`
---
-
-INSERT INTO `reasignar_descripcion` (`num_movimiento`, `fecha`, `concepto`, `id_tipo`, `codigo_dependencia`) VALUES
-(6, '2021-11-16', 'se reubico', 2, 55454666);
 
 -- --------------------------------------------------------
 
@@ -942,7 +1021,7 @@ INSERT INTO `rol` (`id_rol`, `rol`, `descripcion`, `estado`) VALUES
 (1, 'ADMINISTRADOR', 'todos los permisosewrewr', 0),
 (2, 'REGISTRADOR', 'permisos registro', 0),
 (7, 'BIENES', 'GESTION DE BIENES', 0),
-(9, 'REGISTRADOR', 'permiso basico', 1),
+(9, 'SECRETARIA', 'REGISTRADOR', 1),
 (10, 'ADMINISTRADOR', 'TODOS LOS PERMISOS', 1);
 
 --
@@ -1026,6 +1105,14 @@ INSERT INTO `rol_permiso` (`rol_id`, `permiso_id`) VALUES
 (7, 33),
 (7, 34),
 (7, 35),
+(9, 1),
+(9, 2),
+(9, 3),
+(9, 4),
+(9, 5),
+(9, 6),
+(9, 7),
+(9, 8),
 (10, 1),
 (10, 2),
 (10, 3),
@@ -1060,7 +1147,8 @@ INSERT INTO `rol_permiso` (`rol_id`, `permiso_id`) VALUES
 (10, 32),
 (10, 33),
 (10, 34),
-(10, 35);
+(10, 35),
+(10, 36);
 
 -- --------------------------------------------------------
 
@@ -1079,7 +1167,8 @@ CREATE TABLE `tipo_bien` (
 --
 
 INSERT INTO `tipo_bien` (`id_tipo`, `tipo`, `estado`) VALUES
-(2, 'MUEBLE', 1),
+(1, 'DSFSDFSDFEEE', 0),
+(2, 'DANI', 0),
 (3, 'INMUEBLE', 1);
 
 --
@@ -1113,8 +1202,10 @@ CREATE TABLE `tipo_reasignacion` (
 --
 
 INSERT INTO `tipo_reasignacion` (`id_tipo`, `tipo`, `estado`) VALUES
-(2, 'PERDIDA', 1),
-(5, 'MAL ESTADO', 1);
+(1, 'ASDASDASEEE', 0),
+(2, 'AQUIFUE', 1),
+(3, 'ARI', 0),
+(4, 'AQUIFUEX2', 0);
 
 --
 -- Disparadores `tipo_reasignacion`
@@ -1140,8 +1231,8 @@ CREATE TABLE `usuarios` (
   `id_usuario` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `correo` varchar(60) NOT NULL,
-  `clave` varchar(20) NOT NULL,
-  `imagen` varchar(100) DEFAULT NULL,
+  `clave` varchar(255) NOT NULL,
+  `imagen` varchar(100) NOT NULL,
   `id_rol` int(11) NOT NULL,
   `estado` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -1151,9 +1242,14 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `correo`, `clave`, `imagen`, `id_rol`, `estado`) VALUES
-(13, 'ARIANNA', 'aripaocol@gmaul.com', '123456', 'imagenes/8.jpg', 1, 0),
-(17, 'ARIANNA25', 'arianna25@gmail.com', '123456', NULL, 10, 1),
-(19, 'DANIELA29', 'daniela29@gmail.com', '123456', NULL, 9, 1);
+(16, 'DANIELA', 'daniela@gmail.com', 'T2NIclc4bHd2MXR5U2E2', 'imagenes/user.png', 9, 1),
+(17, 'MARIANA', 'Mariana@gmail.com', 'HOLA12', 'imagenes/IMG-20210809-WA0001.jpg', 2, 0),
+(18, 'MARIANIS', 'Marianis@gmail.com', 'HOLA13', 'imagenes/IMG-20210809-WA0001.jpg', 2, 0),
+(19, 'PAOLA', 'aripaocol@gmail.com', '106329', 'imagenes/user.png', 9, 1),
+(20, 'SUPERUSER', 'superUser@gmail.com', '123456', 'imagenes/user.png', 10, 1),
+(21, 'ARIANNA', 'arianna@gmail.com', '123456', 'imagenes/user.png', 9, 1),
+(22, 'MARIAS', 'marias@goam.com', 'ba3253876aed6bc22d4a', 'imagenes/user.png', 9, 0),
+(23, 'MARISOL', 'Maror@gmail.com', '$2y$10$z6q7Mwkm1d6GP', 'imagenes/BASE.png', 9, 0);
 
 --
 -- Disparadores `usuarios`
@@ -1350,19 +1446,19 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `acta`
 --
 ALTER TABLE `acta`
-  MODIFY `num_acta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
+  MODIFY `num_acta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
 
 --
 -- AUTO_INCREMENT de la tabla `asignacion`
 --
 ALTER TABLE `asignacion`
-  MODIFY `id_asignacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id_asignacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT de la tabla `asignacion_descripcion`
 --
 ALTER TABLE `asignacion_descripcion`
-  MODIFY `num_movimiento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `num_movimiento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT de la tabla `bienes`
@@ -1374,7 +1470,7 @@ ALTER TABLE `bienes`
 -- AUTO_INCREMENT de la tabla `bitacora`
 --
 ALTER TABLE `bitacora`
-  MODIFY `id_bitacora` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=273;
+  MODIFY `id_bitacora` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=342;
 
 --
 -- AUTO_INCREMENT de la tabla `cargo`
@@ -1386,37 +1482,37 @@ ALTER TABLE `cargo`
 -- AUTO_INCREMENT de la tabla `categoria_sigecof`
 --
 ALTER TABLE `categoria_sigecof`
-  MODIFY `codigo_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20003;
+  MODIFY `codigo_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1236;
 
 --
 -- AUTO_INCREMENT de la tabla `clasificacion_cat`
 --
 ALTER TABLE `clasificacion_cat`
-  MODIFY `id_clasificacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_clasificacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `clasificacion_dep`
 --
 ALTER TABLE `clasificacion_dep`
-  MODIFY `id_clasificacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_clasificacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `denominacion`
 --
 ALTER TABLE `denominacion`
-  MODIFY `id_denominacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_denominacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `dependencias`
 --
 ALTER TABLE `dependencias`
-  MODIFY `codigo_dependencia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55454669;
+  MODIFY `codigo_dependencia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55454667;
 
 --
 -- AUTO_INCREMENT de la tabla `desincorporar`
 --
 ALTER TABLE `desincorporar`
-  MODIFY `num_movimiento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `num_movimiento` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `encargados`
@@ -1428,7 +1524,7 @@ ALTER TABLE `encargados`
 -- AUTO_INCREMENT de la tabla `locacion`
 --
 ALTER TABLE `locacion`
-  MODIFY `id_locacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_locacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `modulos`
@@ -1440,7 +1536,7 @@ ALTER TABLE `modulos`
 -- AUTO_INCREMENT de la tabla `permisos`
 --
 ALTER TABLE `permisos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT de la tabla `proveedor`
@@ -1452,13 +1548,13 @@ ALTER TABLE `proveedor`
 -- AUTO_INCREMENT de la tabla `reasignar`
 --
 ALTER TABLE `reasignar`
-  MODIFY `id_reasignacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_reasignacion` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `reasignar_descripcion`
 --
 ALTER TABLE `reasignar_descripcion`
-  MODIFY `num_movimiento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `num_movimiento` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `rol`
@@ -1476,23 +1572,17 @@ ALTER TABLE `tipo_bien`
 -- AUTO_INCREMENT de la tabla `tipo_reasignacion`
 --
 ALTER TABLE `tipo_reasignacion`
-  MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- Restricciones para tablas volcadas
 --
-
---
--- Filtros para la tabla `acta`
---
-ALTER TABLE `acta`
-  ADD CONSTRAINT `acta_ibfk_1` FOREIGN KEY (`id_proveedor`) REFERENCES `proveedor` (`id_proveedor`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `asignacion`
@@ -1501,70 +1591,6 @@ ALTER TABLE `asignacion`
   ADD CONSTRAINT `asignacion_ibfk_1` FOREIGN KEY (`codigo_dependencia`) REFERENCES `dependencias` (`codigo_dependencia`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `asignacion_ibfk_2` FOREIGN KEY (`num_movimiento`) REFERENCES `asignacion_descripcion` (`num_movimiento`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `asignacion_ibfk_3` FOREIGN KEY (`codigo_bien`) REFERENCES `bienes` (`codigo`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `bienes`
---
-ALTER TABLE `bienes`
-  ADD CONSTRAINT `bienes_ibfk_1` FOREIGN KEY (`codigo_categoria`) REFERENCES `categoria_sigecof` (`codigo_categoria`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `bienes_ibfk_2` FOREIGN KEY (`id_tipo`) REFERENCES `tipo_bien` (`id_tipo`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `bienes_ibfk_3` FOREIGN KEY (`num_acta`) REFERENCES `acta` (`num_acta`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `categoria_sigecof`
---
-ALTER TABLE `categoria_sigecof`
-  ADD CONSTRAINT `categoria_sigecof_ibfk_1` FOREIGN KEY (`id_clasificacion`) REFERENCES `clasificacion_cat` (`id_clasificacion`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `categoria_sigecof_ibfk_2` FOREIGN KEY (`id_denominacion`) REFERENCES `denominacion` (`id_denominacion`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `dependencias`
---
-ALTER TABLE `dependencias`
-  ADD CONSTRAINT `dependencias_ibfk_1` FOREIGN KEY (`id_locacion`) REFERENCES `locacion` (`id_locacion`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `dependencias_ibfk_2` FOREIGN KEY (`id_clasificacion`) REFERENCES `clasificacion_dep` (`id_clasificacion`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `dependencias_ibfk_3` FOREIGN KEY (`id_encargado`) REFERENCES `encargados` (`id_encargado`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `desincorporar`
---
-ALTER TABLE `desincorporar`
-  ADD CONSTRAINT `desincorporar_ibfk_3` FOREIGN KEY (`codigo_dependencia`) REFERENCES `dependencias` (`codigo_dependencia`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `desincorporar_ibfk_4` FOREIGN KEY (`codigo_bien`) REFERENCES `bienes` (`codigo`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `encargados`
---
-ALTER TABLE `encargados`
-  ADD CONSTRAINT `encargados_ibfk_1` FOREIGN KEY (`id_cargo`) REFERENCES `cargo` (`id_cargo`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `reasignar`
---
-ALTER TABLE `reasignar`
-  ADD CONSTRAINT `reasignar_ibfk_1` FOREIGN KEY (`num_movimiento`) REFERENCES `reasignar_descripcion` (`num_movimiento`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `reasignar_ibfk_2` FOREIGN KEY (`nueva_dependencia`) REFERENCES `dependencias` (`codigo_dependencia`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `reasignar_ibfk_3` FOREIGN KEY (`codigo_bien`) REFERENCES `bienes` (`codigo`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `reasignar_descripcion`
---
-ALTER TABLE `reasignar_descripcion`
-  ADD CONSTRAINT `reasignar_descripcion_ibfk_1` FOREIGN KEY (`codigo_dependencia`) REFERENCES `dependencias` (`codigo_dependencia`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `reasignar_descripcion_ibfk_2` FOREIGN KEY (`id_tipo`) REFERENCES `tipo_reasignacion` (`id_tipo`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Filtros para la tabla `rol_permiso`
---
-ALTER TABLE `rol_permiso`
-  ADD CONSTRAINT `fk_roles_has_permisos_permisos1` FOREIGN KEY (`permiso_id`) REFERENCES `permisos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_roles_has_permisos_roles1` FOREIGN KEY (`rol_id`) REFERENCES `rol` (`id_rol`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `usuarios`
---
-ALTER TABLE `usuarios`
-  ADD CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `rol` (`id_rol`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

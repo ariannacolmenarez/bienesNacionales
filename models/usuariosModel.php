@@ -150,7 +150,7 @@
 
     public function obtener($id){
         try {
-            
+            $id=builder::desencriptar($id);
             $consulta= Conexion::conect()->prepare("SELECT * FROM usuarios WHERE id_usuario=?;");
             $consulta->execute(array($id));
             $r=$consulta->fetch(PDO::FETCH_OBJ);
@@ -170,6 +170,14 @@
         }
     }
 
+    public function clave($id){
+        $consulta= Conexion::conect()->prepare("SELECT clave FROM usuarios WHERE id_usuario=?;");
+            $consulta->execute(array($id));
+            $r=$consulta->fetch(PDO::FETCH_OBJ);
+            
+            return $r->clave;
+    }
+
     public function select(){
         $consulta= Conexion::conect()->prepare("SELECT * FROM rol WHERE estado !=0");
         $consulta->execute();
@@ -178,6 +186,7 @@
 
     public function eliminar($id){
         try {
+            $id=builder::desencriptar($id);
             $estado=0;
             $consulta="UPDATE usuarios SET estado=? WHERE id_usuario=?;";
             Conexion::conect()->prepare($consulta)->execute(array($estado,$id));

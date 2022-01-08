@@ -25,7 +25,7 @@
                    <td>'.$r->clasificacion.'</td>
                        <td><div class="row">
 					   '. (in_array("Modificar Configuracion", $_SESSION['bn_permisos']) ? '
-								<a class="col-lg-2 col-md-2 col-xs-6" href="'.BASE_URL.'clasificacionCat/modificarClasificacionCat?c='.$r->id_clasificacion.'">
+								<a class="col-lg-2 col-md-2 col-xs-6" href="'.BASE_URL.'clasificacionCat/modificarClasificacionCat?c='.builder::encriptar($r->id_clasificacion).'">
 									<button class=" btn btn-warning btn-sm mx-1" title="Editar" >
 										<i class="fas fa-pencil-alt"></i>
 									</button>
@@ -33,7 +33,7 @@
 						':'').'
 					   
 					   	'. (in_array("Eliminar Configuracion", $_SESSION['bn_permisos']) ? '
-								<a class="col-lg-2 col-md-2 col-xs-6" href="'.BASE_URL.'clasificacionCat/eliminar?c='.$r->id_clasificacion.'" onclick="return confirmar();">
+								<a class="col-lg-2 col-md-2 col-xs-6" href="'.BASE_URL.'clasificacionCat/eliminar?c='.builder::encriptar($r->id_clasificacion).'" onclick="return confirmar();">
 									<button class=" btn btn-danger btn-sm mx-1" title="Eliminar" >
 										<i class="fas fa-trash-alt"></i>
 									</button>
@@ -69,7 +69,8 @@
         public function actualizar(){
 			if (!empty($_POST['clasificacion'] )) {
 				$p=new clasificacionCatModel();
-				$p->setid_clasificacion($_GET['c']);
+				$id=builder::desencriptar($_GET['c']);
+				$p->setid_clasificacion($id);
             	$p->setclasificacion(strtoupper($_POST['clasificacion']));
 				$this->model->modificar($p);
 				$_SESSION["mensaje"] = "¡Clasificación de Categoría actualizada correctamente!";

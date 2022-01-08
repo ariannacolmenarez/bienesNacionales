@@ -31,7 +31,7 @@
 					<td>'.$r->denominacion.'</td>
 					<td><div class="row">
 						'. (in_array("Modificar Categorias", $_SESSION['bn_permisos']) ? '
-								<a class="col-lg-4 col-md-5 col-xs-6" href="'.BASE_URL.'categorias/modificarCategorias?c='.$r->codigo_categoria.'">
+								<a class="col-lg-4 col-md-5 col-xs-6" href="'.BASE_URL.'categorias/modificarCategorias?c='.builder::encriptar($r->codigo_categoria).'">
 									<button class=" btn btn-warning btn-sm mx-1" title="Editar" >
 										<i class="fas fa-pencil-alt"></i>
 									</button>
@@ -39,7 +39,7 @@
 						':'').'
 					   
 					   	'. (in_array("Eliminar Categorias", $_SESSION['bn_permisos']) ? '
-								<a class="col-lg-4 col-md-5 col-xs-6" href="'.BASE_URL.'categorias/eliminar?c='.$r->codigo_categoria.'" onclick="return confirmar();">
+								<a class="col-lg-4 col-md-5 col-xs-6" href="'.BASE_URL.'categorias/eliminar?c='.builder::encriptar($r->codigo_categoria).'" onclick="return confirmar();">
 									<button class=" btn btn-danger btn-sm mx-1" title="Eliminar" >
 										<i class="fas fa-trash-alt"></i>
 									</button>
@@ -79,7 +79,8 @@
 		public function actualizar(){
 			if (!empty( $_POST['presupuestaria'] || $_POST['clasificacion'] || $_POST['denominacion'])) {
 				$p=new categoriasModel();
-				$p->setcodigo($_GET['c']);
+				$id=builder::desencriptar($_GET['c']);
+				$p->setcodigo($id);
             	$p->setpresupuestaria(strtoupper($_POST['presupuestaria']));            
             	if (!empty($_POST['denominacion'])) {
 					$p->setid_denominacion($_POST['denominacion']);

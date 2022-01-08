@@ -25,7 +25,7 @@
 				header("location:".BASE_URL);
 			}
 			$p=new rolesModel();
-			$rol_id = $_GET['c'];
+			$rol_id = builder::desencriptar($_GET['c']);
 			$permisos = $p->obtenerPermisos($rol_id);
 			$data['page_tag'] = "Permisos | UPTAEB";
 			$data['page_title'] = "Permisos";
@@ -53,16 +53,16 @@
 				   <td>'.$r->descripcion.'</td>
 				   <td><div class="row">
 				   '. (in_array("Modificar Seguridad", $_SESSION['bn_permisos']) ? '
-					   <a class="col-lg-2 col-md-3 " href="'.BASE_URL.'roles/modificarRoles?c='.$r->id_rol.'"><button class=" btn btn-warning btn-sm mx-1" title="Editar" >
+					   <a class="col-lg-2 col-md-3 " href="'.BASE_URL.'roles/modificarRoles?c='.builder::encriptar($r->id_rol).'"><button class=" btn btn-warning btn-sm mx-1" title="Editar" >
 						   <i class="fas fa-pencil-alt"></i>
 					   </button></a>
-					   <a class="col-lg-2 col-md-3" href="'.BASE_URL.'roles/eliminar?c='.$r->id_rol.'" onclick="return confirmar();" ><button  class=" btn btn-danger btn-sm mx-1" title="Eliminar" >
+					   <a class="col-lg-2 col-md-3" href="'.BASE_URL.'roles/eliminar?c='.builder::encriptar($r->id_rol).'" onclick="return confirmar();" ><button  class=" btn btn-danger btn-sm mx-1" title="Eliminar" >
 						   <i class="fas fa-trash-alt"></i>
 					   </button></a>
 					   ':'').'
 					   
 					   	'. (in_array("Eliminar Seguridad", $_SESSION['bn_permisos']) ? '
-					   <a class="col-lg-2 col-md-3" href="'.BASE_URL.'roles/permisos?c='.$r->id_rol.'"  ><button  class=" btn btn-dark btn-sm mx-1" title="permisos" >
+					   <a class="col-lg-2 col-md-3" href="'.BASE_URL.'roles/permisos?c='.builder::encriptar($r->id_rol).'" ><button  class=" btn btn-dark btn-sm mx-1" title="permisos" >
 						   <i class="fas fa-key"></i>
 					   </button></a>
 					   </div>
@@ -92,10 +92,11 @@
 		   if (!empty($_POST['nombre'] )) {
  				
 			   $p=new rolesModel();
-			   $p->setid_rol($_GET['c']);
+			   $id=builder::desencriptar($_GET['c']);
+			   $p->setid_rol($id);
 			   $p->setrol(strtoupper($_POST['nombre']));
 			   if (isset($_POST['descripcion'])) {
-				   $p->setdescripcion($_POST['descripcion']);
+				   $p->setdescripcion(strtoupper($_POST['descripcion']));
 			   }
 			   
 			   $this->model->modificar($p);
@@ -128,9 +129,9 @@
 		public static function listar_permisos(){
             foreach (modulosModel::listar() as $r){
            echo '	<tr class="text-center">
-                   		<td>'.$r->id_modulo.'</td>
+                   		<td>'.builder::encriptar($r->id_modulo).'</td>
                    		<td>'.$r->nombre.'</td>
-				   		<td><input  type="hidden" name="id" value="'.$r->id_modulo.'">
+				   		<td><input  type="hidden" name="id" value="'.builder::encriptar($r->id_modulo).'">
 				   			<label class="switchBtn">
 					   			<input type="checkbox" name="permisos[]" value="1">
 					   			<div class="slide round">ON</div>

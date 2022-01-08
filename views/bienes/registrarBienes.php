@@ -26,11 +26,6 @@
                     <form method="POST" enctype="multipart/form-data" action="<?= BASE_URL; ?>bienes/guardar" id="form_bien">
                         <h3><b>Acta de Asignación</b></h3>
                         <div class="form-row">
-                            
-                            <div class="form-group col-md-4">
-                                <label for="num_acta"><b>N Acta</b></label>
-                                <input type="text" class="form-control bg-light" name="num_acta" id="num_acta" placeholder="Numero generado" disabled>
-                            </div>
                             <div class="form-group col-md-4">
                                 <label for="fecha"><b>Fecha</b></label>
                                 <input type="date" class="form-control bg-light" name="fecha" id="fecha">

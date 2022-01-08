@@ -26,11 +26,7 @@
                     <form method="POST" action="<?= BASE_URL; ?>dependencias/actualizar?c=<?=$_GET['c']?>" id="form_dependencia" >
                         <div class="form-row">
                         <?php $p=new dependenciasModel; $r=$p->obtener($_GET['c']); ?>
-                            <div class="form-group col-md-6">
-                                <label for="codigo">Código</label>
-                                <input type="text" class="form-control bg-light" name="codigo" placeholder="Escriba el código" value="<?=$r->getcodigo()?>" disabled>
-                            </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-4">
                                 <label for="clasificacion"><b>Clasificacion</b></label>
                                 <select class="form-control bg-light" name="clasificacion" id="clasificacion">
                                     <option selected disabled>Seleccione Clasificacion de la dependencia</option>
@@ -38,11 +34,11 @@
                                 </select>
                                 <span class="error3"></span>
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-4">
                                 <label for="dependencia">Dependencia</label>
                                 <input type="text" class="form-control bg-light" name="nombre" id="nombre" placeholder="Escriba el nombre de la dependencia" value="<?=$r->getnombre()?>">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-4">
                                 <label for="locacion"><b>Edificio / Locacion</b></label>
                                 <select class="form-control bg-light" name="locacion" id="locacion">
                                     <option selected disabled>Seleccione locacion de la dependencia</option>

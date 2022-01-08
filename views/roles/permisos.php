@@ -320,6 +320,16 @@
                                         </label>
                                     </td>
                                 </tr>
+                                <tr class="text-center">
+                                    <td>12</td>
+                                    <td>Mantenimiento</td>
+                                    <td>
+                                        <label class="switchBtn">
+                                            <input type="checkbox" name="permisos[]" value="36" <?= in_array("Consultar Mantenimiento", $data['permisos']) ? "checked='1'": "" ?>>
+                                            <div class="slide round">ON</div>
+                                        </label>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                         <div class="text-center">

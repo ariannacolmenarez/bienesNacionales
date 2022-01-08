@@ -12,19 +12,22 @@
 		private $controlador;
 
 		public function __construct(){
-			if (!empty($_GET)) {
-                $this->url = $_GET["url"];
-				$this->Validar_URL(); 
-            }else{
+            
+			if (empty($_GET)|| $_GET["url"] == "login") {
                 require_once "controllers/login.php";
                 $controlador= new login();
                 call_user_func(array($controlador,"login"));
+            }
+            else{
+                $this->url = $_GET["url"];
+				$this->Validar_URL(); 
+                
             }	
 		}
 
 		private function Validar_URL(){
 			$url = preg_match_all("/^[a-zA-Z0-9-@\/.=:_#$ ]{1,700}$/",$this->url);
-			if($url == 1 && isset($_SESSION['bn_usuario'])){
+			if($url == 1 && (isset($_SESSION['bn_usuario']) || isset($_POST['api']) || isset($_GET['api']) ) ){
                 
                 $controlador = $this->url;
                 $arr = explode("/", $controlador);
@@ -46,7 +49,10 @@
                     }
                 }
 				$this->Cargar_Pagina($controller,$method,$params); 
-			}
+			} 
+            else{
+                die("<script>document.location.href='login';</script>");
+            }
 		}
 
 		private function Cargar_Pagina($controller,$method,$params){

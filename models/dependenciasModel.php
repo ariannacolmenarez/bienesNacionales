@@ -159,7 +159,7 @@
 
 		public function obtener($id){
 			try {
-				
+				$id=builder::desencriptar($id);
 				$consulta= parent::conect()->prepare("SELECT * FROM dependencias WHERE codigo_dependencia=?;");
 				$consulta->execute(array($id));
 				$r=$consulta->fetch(PDO::FETCH_OBJ);
@@ -227,7 +227,7 @@
 
 		public function eliminar($id){
 			try {
-	
+	            $id=builder::desencriptar($id);
 				$consulta="UPDATE dependencias SET estado=? WHERE codigo_dependencia=?;";
 				parent::conect()->prepare($consulta)->execute(array($estado,$id));
 	

@@ -123,7 +123,7 @@
 
 		public function obtener($id){
 			try {
-				
+				$id=builder::desencriptar($id);
 				$consulta= parent::conect()->prepare("SELECT * FROM acta  WHERE num_acta=?;");
 				$consulta->execute(array($id));
 				$r=$consulta->fetch(PDO::FETCH_OBJ);
@@ -186,6 +186,7 @@
 
 		public function eliminar($id){
 			try {
+				$id=builder::desencriptar($id);
 				$estado=0;
             	$consulta="UPDATE acta SET estado=? WHERE num_acta=?;";
 				parent::conect()->prepare($consulta)->execute(array($estado,$id));

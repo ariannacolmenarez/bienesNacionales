@@ -90,7 +90,7 @@
 
     public function obtener($id){
         try {
-            
+            $id=builder::desencriptar($id);
             $consulta= Conexion::conect()->prepare("SELECT * FROM denominacion WHERE id_denominacion=?;");
             $consulta->execute(array($id));
             $r=$consulta->fetch(PDO::FETCH_OBJ);
@@ -107,6 +107,7 @@
 
     public function eliminar($id){
         try {
+            $id=builder::desencriptar($id);
             $estado=0;
             $consulta="UPDATE denominacion SET estado=? WHERE id_denominacion=?;";
             Conexion::conect()->prepare($consulta)->execute(array($estado,$id));

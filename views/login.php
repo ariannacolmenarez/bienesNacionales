@@ -23,6 +23,7 @@
 
     <!-- Custom styles table -->
     <link href="<?= media(); ?>/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-gradient-primary">
@@ -60,13 +61,13 @@
                     <?php
                       }
                     ?>
-                    
                     <button type="submit" id="submit" class="btn btn-primary btn-user btn-block">
                       Login
                     </button>
+                    
                   </form>
                   <div class="text-center">
-                    <a class="small" href="forgot-password.html">Forgot Password?</a>
+                  <a id="recuperar" class="link-primary">recuperar Contraseña</a>
                   </div>
                   <div class="text-center">
                   </div>
@@ -93,6 +94,8 @@
   <script src="<?= media(); ?>/sweetalert2/dist/sweetalert2.all.min.js"></script>
   <script src="<?= media(); ?>js/sb-admin-2.min.js"></script>
   <script src="<?= media(); ?>/js/validation/login.js"></script>
+  <script src="<?= media(); ?>/js/scripts/recuperarCont.js"></script>
+
 
 </body>
 

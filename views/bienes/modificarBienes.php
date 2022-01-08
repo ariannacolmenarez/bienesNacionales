@@ -28,10 +28,6 @@
                         <div class="form-row">
                             <?php $p=new actaModel; $r=$p->obtener($_GET['c']); ?>
                             <div class="form-group col-md-4">
-                                <label for="num_acta"><b>N Acta</b></label>
-                                <input type="text" class="form-control bg-light" name="num_acta" value="<?=$r->getnum_acta()?>" placeholder="Numero de Acta generado" disabled>
-                            </div>
-                            <div class="form-group col-md-4">
                                 <label for="fecha"><b>Fecha</b></label>
                                 <input type="date" class="form-control bg-light" name="fecha" id="fecha" value="<?=$r->getfecha()?>">
                             </div>

@@ -86,7 +86,7 @@
 
     public function obtener($id){
         try {
-            
+            $id=builder::desencriptar($id);
             $consulta= Conexion::conect()->prepare("SELECT * FROM modulos WHERE id_modulo=?;");
             $consulta->execute(array($id));
             $r=$consulta->fetch(PDO::FETCH_OBJ);
@@ -103,7 +103,7 @@
 
     public function eliminar($id){
         try {
-
+            $id=builder::desencriptar($id);
             $consulta="DELETE FROM modulos WHERE id_modulo=?;";
             Conexion::conect()->prepare($consulta)->execute(array($id));
 

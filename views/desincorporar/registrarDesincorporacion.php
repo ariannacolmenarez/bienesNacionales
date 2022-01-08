@@ -25,10 +25,6 @@
                 <div class="card-body">
                     <form method="POST" action="<?= BASE_URL; ?>desincorporar/guardar" id="form_desincorporar">
                         <div class="form-row">
-                            <div class="form-group col-md-4 ">
-                                <label for="movimiento">Movimiento</label>
-                                <input type="text" class="form-control bg-light" name="movimiento" placeholder="Número de movimiento generado" disabled>
-                            </div>
                             <div class="form-group col-md-4">
                                 <label for="fecha">Fecha</label>
                                 <input type="date" class="form-control bg-light" name="fecha" id="fecha">

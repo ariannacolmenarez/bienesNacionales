@@ -17,16 +17,19 @@
         rel="stylesheet">
 
     <!-- Custom styles-->
-    <link href="<?= media(); ?>/css/sb-admin-2.css" rel="stylesheet">
-    <link href="<?= media(); ?>/css/styles.css" rel="stylesheet">
+    <link href="<?= media(); ?>css/sb-admin-2.css" rel="stylesheet">
+    <link href="<?= media(); ?>css/styles.css" rel="stylesheet">
+    <link href="<?= media(); ?>css/notificaciones.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="<?= media(); ?>/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="<?= media(); ?>sweetalert2/dist/sweetalert2.min.css">
 
     <!-- Custom styles table -->
-    <link href="<?= media(); ?>/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="<?= media(); ?>vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <!-- Scripts -->
-    <script src="<?= media(); ?>/vendor/jquery/jquery.min.js"></script>
-    <script src="<?= media(); ?>/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="<?= media(); ?>vendor/jquery/jquery.min.js"></script>
+    <script src="<?= media(); ?>sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script>const BASE_URL = "<?= base_url(); ?>";</script>
+    <script src="<?= media(); ?>js/notificaciones.js"></script>
 </head>
 
 <body id="page-top">

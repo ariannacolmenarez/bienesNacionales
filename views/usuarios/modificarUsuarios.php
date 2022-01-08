@@ -34,18 +34,14 @@
                                 <label for="correo">Correo Electrónico</label>
                                 <input type="text" class="form-control bg-light" name="correo" id="correo" placeholder="Escriba el correo Electrónico"value="<?=$r->getcorreo()?>">
                             </div>
-                            <div class="form-group col-md-6 col-lg-4">
-                                <label for="clave">Clave</label>
-                                <input type="text" class="form-control bg-light" name="clave" id="clave" placeholder="Escriba el clave" value="<?=$r->getclave()?>">
-                            </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-6">
                                 <label for="rol" title="Tipo de Rol del Usuario">Tipo de Rol del Usuario</label>
                                 <select class="form-control bg-light" name="rol" id="rol" >
                                 <?php
                                      usuarios::selected($r->getid_rol()); ?>
                                 </select>
                             </div>
-                            <div class="form-group col-md-4">
+                            <div class="form-group col-md-6">
                                 <div class="col text-center">
                                     <img src="<?php $s=$r->getimagen(); echo BASE_URL.$s; ?>" alt="" style="width: 200px;">
                                 </div>

@@ -29,21 +29,22 @@
 		}
 		
 		public static function listar(){
-
+			
+			
 			foreach (usuariosModel::listar() as $r){
+				
 				if (isset($r->rol)) {
 					$s=$r->rol;
 				}else{$s="";}
 		   echo '	<tr>
 				   <td>'.$r->nombre.'</td>
 				   <td>'.$r->correo.'</td>
-				   <td>'.$r->clave.'</td>
 				   <td>'. $s.'</td>
 				   <td class="text-center"><img src="'.BASE_URL.$r->imagen.'" alt="" style="width: 150px;"></td>
 				   <td class="text-center"><div class="row">
-				   		'. (in_array("Modificar Usuarios", $_SESSION['bn_permisos']) ? '
+				   		'. (in_array("Modificar Usuarios", $_SESSION['bn_permisos']) && $r->id_usuario != 19 ? '
 							<div class="col-3">
-								<a  href="'.BASE_URL.'usuarios/modificarUsuarios?c='.$r->id_usuario.'" >
+								<a href="'.BASE_URL.'usuarios/modificarUsuarios?c='.builder::encriptar($r->id_usuario).'" >
 									<button class=" btn btn-warning btn-sm mx-1" title="Editar" >
 										<i class="fas fa-pencil-alt"></i>
 									</button>
@@ -51,9 +52,9 @@
 							</div>
 						':'').'
 					   
-					   	'. (in_array("Eliminar Usuarios", $_SESSION['bn_permisos']) ? '
+					   	'. (in_array("Eliminar Usuarios", $_SESSION['bn_permisos']) && $r->id_usuario != 19 ? '
 						   <div class="col-3">
-								<a  href="'.BASE_URL.'usuarios/eliminar?c='.$r->id_usuario.'" onclick="return confirmar();">
+								<a  href="'.BASE_URL.'usuarios/eliminar?c='.builder::encriptar($r->id_usuario).'" onclick="return confirmar();">
 									<button class=" btn btn-danger btn-sm mx-1" title="Eliminar" >
 										<i class="fas fa-trash-alt"></i>
 									</button>
@@ -71,7 +72,7 @@
 		   
 			   $p=new usuariosModel();
 			   $p->setnombre(strtoupper($_POST['nombre']));
-			   $p->setclave(strtoupper($_POST['clave']));            
+			   $p->setclave(encriptarContrasena(strtoupper($_POST['clave'])));            
 			   $p->setcorreo($_POST['correo']);
 			   $p->setid_rol($_POST['rol']);
 
@@ -103,33 +104,62 @@
 
 	   public function actualizar(){
 		   if (!empty($_POST['nombre'] || $_POST['clave'] || $_POST['correo'] || $_FILES['fotos'] || $_POST['rol'])) {
+				if(isset($_POST['perfil'])){
+					$p=new usuariosModel();
+					$p->setid_usuario($_GET['c']);
+					$p->setnombre(strtoupper($_POST['nombre']));
+					$p->setid_rol($_SESSION['bn_rol']);
+					if(isset($_POST['clave'])){
+						$p->setclave(encriptarContrasena(strtoupper($_POST['clave'])));  
+					}else{
+						$p->setclave($p->clave($_GET['c']));
+					}      
+					$p->setcorreo($_POST['correo']);
+					if(isset($_POST['fotos'])){
+						$name = $_FILES["fotos"]["name"];
+						$source = $_FILES["fotos"]["tmp_name"];
 
-			   $p=new usuariosModel();
-			   $p->setid_usuario($_GET['c']);
-			   $p->setnombre(strtoupper($_POST['nombre']));
-			   $p->setclave(strtoupper($_POST['clave']));            
-			   $p->setcorreo($_POST['correo']);
-			   $p->setid_rol($_POST['rol']);
+						$directorio     = "imagenes";
+						$midir          = opendir($directorio);
+						$rutaLocal      = $directorio . '/' .$name;
+						if (move_uploaded_file($source, $rutaLocal)) {
+							$p->setimagen($rutaLocal);
+						}
+					}else{
+						$p->setimagen($_SESSION['bn_imagen']);
+					}
+					$this->model->modificar($p);
+					$_SESSION["mensaje"] = "¡Usuario actualizado correctamente!";
+					$_SESSION["tipo_mensaje"] = "success";
+					
+					header("location:".BASE_URL."usuarios/perfil");
+				}else{
+					$p=new usuariosModel();
+					$id=builder::desencriptar($_GET['c']);
+					$p->setid_usuario($id);
+					$p->setnombre(strtoupper($_POST['nombre']));
+					$p->setclave(encriptarContrasena(strtoupper($_POST['clave'])));            
+					$p->setcorreo($_POST['correo']);
+					$p->setid_rol($_POST['rol']);
+					
+					$name = $_FILES["fotos"]["name"];
+					$source = $_FILES["fotos"]["tmp_name"];
+
+					$directorio     = "imagenes";
+					$midir          = opendir($directorio);
+					$rutaLocal      = $directorio . '/' .$name;
+					if (move_uploaded_file($source, $rutaLocal)) {
+						$p->setimagen($rutaLocal);
+					}
+					
+					$this->model->modificar($p);
+					$_SESSION["mensaje"] = "¡Usuario actualizado correctamente!";
+					$_SESSION["tipo_mensaje"] = "success";
+					
+					header("location:".BASE_URL."usuarios"); 
+				}
+				
 			   
-			   $name = $_FILES["fotos"]["name"];
-    			$source = $_FILES["fotos"]["tmp_name"];
-
-    			$directorio     = "imagenes";
-    			$midir          = opendir($directorio);
-    			$rutaLocal      = $directorio . '/' .$name;
-    			if (move_uploaded_file($source, $rutaLocal)) {
-					$p->setimagen($rutaLocal);
-     			}
-			   echo $rutaLocal;
-			   $this->model->modificar($p);
-			   $_SESSION["mensaje"] = "¡Usuario actualizado correctamente!";
-			   $_SESSION["tipo_mensaje"] = "success";
-			   if (isset($_POST['perfil'])) {
-				header("location:".BASE_URL."usuarios/perfil");
-			   }else{
-				  header("location:".BASE_URL."usuarios"); 
-			   }
-			   #
 		   }
 
 	   }
@@ -171,7 +201,7 @@
 			$data['page_tag'] = "Perfil";
 			$data['page_title'] = "Perfil";
 			parent::getView($this,"perfil", $data);
-		}
+		}		
 
 	}
 
