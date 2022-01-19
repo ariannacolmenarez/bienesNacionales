@@ -75,7 +75,7 @@
 				INNER JOIN dependencias ON dependencias.codigo_dependencia = asignacion.codigo_dependencia
 				INNER JOIN bienes ON bienes.codigo = asignacion.codigo_bien
                 INNER JOIN asignacion_descripcion a ON a.num_movimiento = asignacion.num_movimiento
-                where a.estado=1";
+                where a.estado=1 and bienes.estado = 1";
                 $consulta= parent::conect()->prepare($sql);
                 $consulta->execute();
                 return $consulta->fetchALL(PDO::FETCH_OBJ);

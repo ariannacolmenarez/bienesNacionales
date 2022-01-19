@@ -3,108 +3,24 @@ SET @usuario_id=1;
 
 SET CHARACTER SET utf8; 
 TRUNCATE TABLE acta;
-INSERT INTO acta VALUES("46","2021-10-13","2147483647","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("47","2021-10-12","22222","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("48","2021-10-01","2342343","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("49","2021-10-06","11111111","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("50","2021-10-12","3434444","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("51","2021-10-12","3434444","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("52","2021-10-20","1111111112","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("53","2021-10-07","33333","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("54","2021-10-20","234234","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("55","2021-10-11","5555555","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("56","2021-10-02","5555555","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("59","2021-10-14","23423411","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("60","2021-10-18","2342342","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("61","2021-10-05","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("62","2021-10-13","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("63","2021-10-06","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("64","2021-10-06","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("65","2021-10-12","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("66","2021-10-13","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("67","2021-10-06","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("68","2021-10-11","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("69","2021-10-06","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("70","2021-10-05","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("74","2021-11-24","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("75","2021-11-17","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("76","2021-11-09","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("77","2021-11-10","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("78","2021-11-10","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("79","2021-11-10","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("80","2021-11-10","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("81","2021-11-16","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("82","2021-10-07","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("83","2021-10-13","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("84","2021-10-14","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("85","2021-10-06","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("86","2021-10-05","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("87","2021-10-05","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("88","2021-10-06","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("89","2021-10-12","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("90","2021-10-13","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("91","2021-10-06","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("92","2021-10-12","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("93","2021-10-07","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("94","2021-10-06","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("95","2021-10-13","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("96","2021-10-13","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("97","2021-10-13","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("98","2021-10-07","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("99","2021-10-21","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("100","2021-10-13","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("101","2021-10-07","0","0000-00-00","","0","0","0","0","0");
-INSERT INTO acta VALUES("102","2021-10-06","0","0000-00-00","","0","0","0","0","0");
+INSERT INTO acta VALUES("103","2022-01-17","23343","2022-01-12","","","","","5","0");
 
 
 
 TRUNCATE TABLE asignacion;
-INSERT INTO asignacion VALUES("28","55454665","28","1232226","1");
-INSERT INTO asignacion VALUES("29","55454665","29","1231","1");
-INSERT INTO asignacion VALUES("30","55454665","30","12322","0");
-INSERT INTO asignacion VALUES("32","55454665","32","333333","1");
-INSERT INTO asignacion VALUES("33","55454666","33","1232224","1");
-INSERT INTO asignacion VALUES("34","55454665","34","1232227","1");
-INSERT INTO asignacion VALUES("35","55454665","35","1232222","0");
-INSERT INTO asignacion VALUES("36","55454665","36","44444","1");
+INSERT INTO asignacion VALUES("37","55454667","37","3311","0");
+INSERT INTO asignacion VALUES("38","55454667","38","3311","0");
 
 
 
 TRUNCATE TABLE asignacion_descripcion;
-INSERT INTO asignacion_descripcion VALUES("23","2021-10-14","88990","12313","0");
-INSERT INTO asignacion_descripcion VALUES("24","2021-11-11","234234","23423","0");
-INSERT INTO asignacion_descripcion VALUES("25","2021-11-19","88990","12312","0");
-INSERT INTO asignacion_descripcion VALUES("26","2021-11-11","88990","3462","1");
-INSERT INTO asignacion_descripcion VALUES("27","2021-11-10","213123","212","0");
-INSERT INTO asignacion_descripcion VALUES("28","2021-10-09","33231","222","1");
-INSERT INTO asignacion_descripcion VALUES("29","2021-11-07","63454","4689","1");
-INSERT INTO asignacion_descripcion VALUES("30","2022-01-04","13131","1212","0");
-INSERT INTO asignacion_descripcion VALUES("31","2022-01-05","1313111","1212555","1");
-INSERT INTO asignacion_descripcion VALUES("32","2022-01-05","131310","20030","1");
-INSERT INTO asignacion_descripcion VALUES("33","2022-01-04","123123","43432","1");
-INSERT INTO asignacion_descripcion VALUES("34","2022-01-02","22","12","1");
-INSERT INTO asignacion_descripcion VALUES("35","2022-01-03","14234","12344","0");
-INSERT INTO asignacion_descripcion VALUES("36","2022-01-20","si","21","1");
+INSERT INTO asignacion_descripcion VALUES("37","2022-01-12","no","3321","0");
+INSERT INTO asignacion_descripcion VALUES("38","2022-01-13","si","221","0");
 
 
 
 TRUNCATE TABLE bienes;
-INSERT INTO bienes VALUES("1231","pantalla","bueno","2","1235","75","ASIGNADO","1");
-INSERT INTO bienes VALUES("12322","cornetas","","2","1234","88","SIN ASIGNAR","1");
-INSERT INTO bienes VALUES("12345","raton","werwer","2","1234","76","SIN ASIGNAR","1");
-INSERT INTO bienes VALUES("44444","caballo","","3","1234","102","ASIGNADO","1");
-INSERT INTO bienes VALUES("112223","corneta","","1","9","83","","0");
-INSERT INTO bienes VALUES("123123","wsqewqe","qweqwe","2","1235","74","SIN ASIGNAR","0");
-INSERT INTO bienes VALUES("123223","corneta","","1","1234","84","","0");
-INSERT INTO bienes VALUES("123224","disco","","3","1234","88","SIN ASIGNAR","1");
-INSERT INTO bienes VALUES("222222","cornetao","","2","1234","91","SIN ASIGNAR","1");
-INSERT INTO bienes VALUES("333333","platos","","2","1235","101","ASIGNADO","1");
-INSERT INTO bienes VALUES("1232222","pintura","","2","1234","90","SIN ASIGNAR","1");
-INSERT INTO bienes VALUES("1232223","plato","","3","1235","90","SIN ASIGNAR","1");
-INSERT INTO bienes VALUES("1232224","pinturas","","2","1234","91","ASIGNADO","1");
-INSERT INTO bienes VALUES("1232225","cornetau","","2","1234","92","SIN ASIGNAR","1");
-INSERT INTO bienes VALUES("1232226","cornetas","","2","1234","93","ASIGNADO","1");
-INSERT INTO bienes VALUES("1232227","vaso","","2","1235","94","ASIGNADO","1");
+INSERT INTO bienes VALUES("3311","MONITORES","monitor nuevo","3","1235","103","SIN ASIGNAR","1");
 
 
 
@@ -425,71 +341,81 @@ INSERT INTO bitacora VALUES("372","2022-01-08 12:35:21","Actualización de \"19 
 INSERT INTO bitacora VALUES("373","2022-01-08 12:36:27","Actualización de \"19 - SUPERUSUARIO\"","Usuarios","1");
 INSERT INTO bitacora VALUES("374","2022-01-08 12:38:06","Registro de asignacion de \"36\"","Asignación ","1");
 INSERT INTO bitacora VALUES("375","2022-01-08 12:38:06","Actualización de \"102 - 44444\"","Bienes","1");
+INSERT INTO bitacora VALUES("376","2022-01-08 12:44:51","Registro de \"55454667 - CONTADURIA\"","Dependencias","1");
+INSERT INTO bitacora VALUES("377","2022-01-17 09:47:01","Actualización de \"25 - PAOLA\"","Usuarios","1");
+INSERT INTO bitacora VALUES("378","2022-01-17 09:47:04","Actualización de \"16 - DANIELA\"","Usuarios","1");
+INSERT INTO bitacora VALUES("379","2022-01-17 09:47:06","Actualización de \"21 - ARIANNA\"","Usuarios","1");
+INSERT INTO bitacora VALUES("380","2022-01-17 09:51:39","Actualización de \"55454666 - DANI\"","Dependencias","1");
+INSERT INTO bitacora VALUES("381","2022-01-17 09:51:41","Actualización de \"55454665 - JOSEE\"","Dependencias","1");
+INSERT INTO bitacora VALUES("382","2022-01-17 09:53:02","Actualización de \"1234\"","Categoría","1");
+INSERT INTO bitacora VALUES("383","2022-01-17 09:53:46","Actualización de \"93 - 1232226\"","Bienes","1");
+INSERT INTO bitacora VALUES("384","2022-01-17 09:53:48","Actualización de \"94 - 1232227\"","Bienes","1");
+INSERT INTO bitacora VALUES("385","2022-01-17 09:53:50","Actualización de \"101 - 333333\"","Bienes","1");
+INSERT INTO bitacora VALUES("386","2022-01-17 09:53:53","Actualización de \"102 - 44444\"","Bienes","1");
+INSERT INTO bitacora VALUES("387","2022-01-17 09:53:55","Actualización de \"92 - 1232225\"","Bienes","1");
+INSERT INTO bitacora VALUES("388","2022-01-17 09:53:57","Actualización de \"91 - 1232224\"","Bienes","1");
+INSERT INTO bitacora VALUES("389","2022-01-17 09:53:59","Actualización de \"91 - 222222\"","Bienes","1");
+INSERT INTO bitacora VALUES("390","2022-01-17 09:54:02","Actualización de \"90 - 1232223\"","Bienes","1");
+INSERT INTO bitacora VALUES("391","2022-01-17 09:54:04","Actualización de \"90 - 1232222\"","Bienes","1");
+INSERT INTO bitacora VALUES("392","2022-01-17 09:54:06","Actualización de \"88 - 123224\"","Bienes","1");
+INSERT INTO bitacora VALUES("393","2022-01-17 09:54:09","Actualización de \"88 - 12322\"","Bienes","1");
+INSERT INTO bitacora VALUES("394","2022-01-17 10:12:44","Actualización de \"2 - POR DESCARGO\"","Tipo Reasignación","1");
+INSERT INTO bitacora VALUES("395","2022-01-17 10:13:28","Actualización de \"11 - CONTADURIA\"","Clasificación Dependencia","1");
+INSERT INTO bitacora VALUES("396","2022-01-17 10:14:01","Actualización de \"28 - SECRETARIA\"","Cargo","1");
+INSERT INTO bitacora VALUES("397","2022-01-17 10:14:23","Actualización de \"1234567 - CARLOS\"","Proveedores","1");
+INSERT INTO bitacora VALUES("398","2022-01-17 11:58:00","Registro de nuevo \"103 - 3311 - MONITORES\"","Bienes","1");
+INSERT INTO bitacora VALUES("399","2022-01-17 11:58:41","Registro de asignacion de \"37\"","Asignación ","1");
+INSERT INTO bitacora VALUES("400","2022-01-17 11:58:41","Actualización de \"103 - 3311\"","Bienes","1");
+INSERT INTO bitacora VALUES("401","2022-01-17 11:59:19","Actualización de \"103 - 3311\"","Bienes","1");
+INSERT INTO bitacora VALUES("402","2022-01-17 11:59:19","Actualización \"37\"","Asignación","1");
+INSERT INTO bitacora VALUES("403","2022-01-17 11:59:19","Registro de \"3\"","Desincorporar","1");
+INSERT INTO bitacora VALUES("404","2022-01-17 12:03:03","Registro de asignacion de \"38\"","Asignación ","1");
+INSERT INTO bitacora VALUES("405","2022-01-17 12:03:03","Actualización de \"103 - 3311\"","Bienes","1");
+INSERT INTO bitacora VALUES("406","2022-01-17 12:03:54","Actualización de \"103 - 3311\"","Bienes","1");
+INSERT INTO bitacora VALUES("407","2022-01-17 12:03:54","Actualización \"37\"","Asignación","1");
+INSERT INTO bitacora VALUES("408","2022-01-17 12:03:54","Actualización \"38\"","Asignación","1");
+INSERT INTO bitacora VALUES("409","2022-01-17 12:03:54","Registro de \"4\"","Desincorporar","1");
 
 
 
 TRUNCATE TABLE cargo;
-INSERT INTO cargo VALUES("6","ADMINISTRADOR","0");
-INSERT INTO cargo VALUES("11","SECRETARIA","0");
-INSERT INTO cargo VALUES("24","SADCADA","0");
-INSERT INTO cargo VALUES("25","OPERADOR","0");
-INSERT INTO cargo VALUES("26","CAJERA","0");
-INSERT INTO cargo VALUES("27","PERSONA","0");
-INSERT INTO cargo VALUES("28","GENTE","1");
+INSERT INTO cargo VALUES("28","SECRETARIA","1");
 INSERT INTO cargo VALUES("29","JEFE","1");
 
 
 
 TRUNCATE TABLE categoria_sigecof;
-INSERT INTO categoria_sigecof VALUES("1","123123","1","1","0");
-INSERT INTO categoria_sigecof VALUES("4","31223120","1","1","0");
-INSERT INTO categoria_sigecof VALUES("5","31223123","1","4","0");
-INSERT INTO categoria_sigecof VALUES("6","54154","1","1","0");
-INSERT INTO categoria_sigecof VALUES("7","5454","1","1","0");
-INSERT INTO categoria_sigecof VALUES("8","5454654","1","1","0");
-INSERT INTO categoria_sigecof VALUES("9","234234","1","1","0");
-INSERT INTO categoria_sigecof VALUES("10","123213","1","1","0");
-INSERT INTO categoria_sigecof VALUES("1234","123456","1","1","1");
 INSERT INTO categoria_sigecof VALUES("1235","5678","2","5","1");
 
 
 
 TRUNCATE TABLE clasificacion_cat;
-INSERT INTO clasificacion_cat VALUES("1","mueble","0");
 INSERT INTO clasificacion_cat VALUES("2","MUEBLE","1");
-INSERT INTO clasificacion_cat VALUES("3","CALL","0");
 
 
 
 TRUNCATE TABLE clasificacion_dep;
-INSERT INTO clasificacion_dep VALUES("10","DEPARTAMENTO 2","0");
-INSERT INTO clasificacion_dep VALUES("11","ALVAREZ","1");
-INSERT INTO clasificacion_dep VALUES("12","DOCE","0");
+INSERT INTO clasificacion_dep VALUES("11","CONTADURIA","1");
 
 
 
 TRUNCATE TABLE denominacion;
-INSERT INTO denominacion VALUES("1","INGRESOS ORDINARIOS","0");
-INSERT INTO denominacion VALUES("4","OTROS","0");
 INSERT INTO denominacion VALUES("5","TRECE","1");
-INSERT INTO denominacion VALUES("6","UNO","0");
 
 
 
 TRUNCATE TABLE dependencias;
-INSERT INTO dependencias VALUES("55454665","JOSEE","","","","","2021-10-09","10","13","33","1");
-INSERT INTO dependencias VALUES("55454666","DANI","","","","","2021-10-13","11","13","35","1");
+INSERT INTO dependencias VALUES("55454667","CONTADURIA","BUEN ESTADO","SI","","","2022-01-06","11","13","34","1");
 
 
 
 TRUNCATE TABLE desincorporar;
-INSERT INTO desincorporar VALUES("1","2022-01-02","JAJA","2022-01-03","JAJAA","55454665","BCXBVBD","12322","0");
-INSERT INTO desincorporar VALUES("2","2022-01-05","JAJA","2022-01-04","JAJAA","55454665","NA","1232222","0");
+INSERT INTO desincorporar VALUES("3","2022-01-13","","2022-01-17","","55454667","MUY BUEN ESTADO","3311","0");
+INSERT INTO desincorporar VALUES("4","2022-01-14","NO","2022-01-12","","55454667","MAL ESTADO","3311","1");
 
 
 
 TRUNCATE TABLE encargados;
-INSERT INTO encargados VALUES("33","12245789","DANNI","PARRA","414000752","26","0");
 INSERT INTO encargados VALUES("34","12245788","MARIA","RAMONES","426789453","29","1");
 INSERT INTO encargados VALUES("35","12245648","DANI","GARCIA","424356748","28","1");
 INSERT INTO encargados VALUES("36","27629581","ARIANNA","COLMENAREZ","345353","29","0");
@@ -521,10 +447,14 @@ TRUNCATE TABLE notificaciones;
 INSERT INTO notificaciones VALUES("1","Bien Asignado","El Bien \"platos\" ha sido asignado a la Dependencia \"JOSEE\"","0","2022-01-06 21:17:26");
 INSERT INTO notificaciones VALUES("2","Bien Asignado","El Bien \"pinturas\" ha sido asignado a la Dependencia \"DANI\" <br>2022-01-04","1","2022-01-06 21:46:49");
 INSERT INTO notificaciones VALUES("3","Bien Asignado","El Bien \"vaso\" ha sido asignado a la Dependencia \"JOSEE\" <br>02/01/2022","1","2022-01-06 21:49:34");
-INSERT INTO notificaciones VALUES("4","Bien Asignado","El Bien \"pintura\" ha sido asignado a la Dependencia \"JOSEE\" <br>03-01-2022","1","2022-01-06 21:51:27");
-INSERT INTO notificaciones VALUES("5","Bien Desincorporado","El Bien \"cornetas\" ha sido desincorporado de la Dependencia \"JOSEE\" <br>02-01-2022","1","2022-01-06 21:58:18");
-INSERT INTO notificaciones VALUES("6","Bien Desincorporado","El Bien \"pintura\" ha sido desincorporado de la Dependencia \"JOSEE\" <br>05-01-2022","1","2022-01-07 08:26:27");
-INSERT INTO notificaciones VALUES("7","Bien Asignado","El Bien \"caballo\" ha sido asignado a la Dependencia \"JOSEE\" <br>20-01-2022","1","2022-01-08 12:38:06");
+INSERT INTO notificaciones VALUES("4","Bien Asignado","El Bien \"pintura\" ha sido asignado a la Dependencia \"JOSEE\" <br>03-01-2022","0","2022-01-06 21:51:27");
+INSERT INTO notificaciones VALUES("5","Bien Desincorporado","El Bien \"cornetas\" ha sido desincorporado de la Dependencia \"JOSEE\" <br>02-01-2022","0","2022-01-06 21:58:18");
+INSERT INTO notificaciones VALUES("6","Bien Desincorporado","El Bien \"pintura\" ha sido desincorporado de la Dependencia \"JOSEE\" <br>05-01-2022","0","2022-01-07 08:26:27");
+INSERT INTO notificaciones VALUES("7","Bien Asignado","El Bien \"caballo\" ha sido asignado a la Dependencia \"JOSEE\" <br>20-01-2022","0","2022-01-08 12:38:06");
+INSERT INTO notificaciones VALUES("8","Bien Asignado","El Bien \"MONITORES\" ha sido asignado a la Dependencia \"CONTADURIA\" <br>12-01-2022","1","2022-01-17 11:58:41");
+INSERT INTO notificaciones VALUES("9","Bien Desincorporado","El Bien \"MONITORES\" ha sido desincorporado de la Dependencia \"CONTADURIA\" <br>13-01-2022","1","2022-01-17 11:59:19");
+INSERT INTO notificaciones VALUES("10","Bien Asignado","El Bien \"MONITORES\" ha sido asignado a la Dependencia \"CONTADURIA\" <br>13-01-2022","1","2022-01-17 12:03:03");
+INSERT INTO notificaciones VALUES("11","Bien Desincorporado","El Bien \"MONITORES\" ha sido desincorporado de la Dependencia \"CONTADURIA\" <br>14-01-2022","1","2022-01-17 12:03:54");
 
 
 
@@ -569,9 +499,7 @@ INSERT INTO permisos VALUES("3","Modificar Usuarios");
 
 
 TRUNCATE TABLE proveedor;
-INSERT INTO proveedor VALUES("2","DANIELA","5656576","DUACA LARA","0");
-INSERT INTO proveedor VALUES("4","MARIA","12365459","LARA BARQUISIMETO","0");
-INSERT INTO proveedor VALUES("5","CARLO","1234567","BARQUISIMETO","1");
+INSERT INTO proveedor VALUES("5","CARLOS","1234567","BARQUISIMETO","1");
 
 
 
@@ -584,66 +512,12 @@ TRUNCATE TABLE reasignar_descripcion;
 
 
 TRUNCATE TABLE rol;
-INSERT INTO rol VALUES("1","ADMINISTRADOR","todos los permisosewrewr","0");
-INSERT INTO rol VALUES("2","REGISTRADOR","permisos registro","0");
-INSERT INTO rol VALUES("7","BIENES","GESTION DE BIENES","0");
 INSERT INTO rol VALUES("9","SECRETARIA","REGISTRADOR","1");
 INSERT INTO rol VALUES("10","ADMINISTRADOR","TODOS LOS PERMISOS","1");
 
 
 
 TRUNCATE TABLE rol_permiso;
-INSERT INTO rol_permiso VALUES("1","1");
-INSERT INTO rol_permiso VALUES("1","2");
-INSERT INTO rol_permiso VALUES("1","3");
-INSERT INTO rol_permiso VALUES("1","4");
-INSERT INTO rol_permiso VALUES("1","5");
-INSERT INTO rol_permiso VALUES("1","6");
-INSERT INTO rol_permiso VALUES("1","7");
-INSERT INTO rol_permiso VALUES("1","8");
-INSERT INTO rol_permiso VALUES("1","9");
-INSERT INTO rol_permiso VALUES("1","10");
-INSERT INTO rol_permiso VALUES("1","11");
-INSERT INTO rol_permiso VALUES("1","12");
-INSERT INTO rol_permiso VALUES("1","13");
-INSERT INTO rol_permiso VALUES("1","14");
-INSERT INTO rol_permiso VALUES("1","15");
-INSERT INTO rol_permiso VALUES("1","16");
-INSERT INTO rol_permiso VALUES("1","17");
-INSERT INTO rol_permiso VALUES("1","18");
-INSERT INTO rol_permiso VALUES("1","19");
-INSERT INTO rol_permiso VALUES("1","20");
-INSERT INTO rol_permiso VALUES("1","21");
-INSERT INTO rol_permiso VALUES("1","22");
-INSERT INTO rol_permiso VALUES("1","23");
-INSERT INTO rol_permiso VALUES("1","24");
-INSERT INTO rol_permiso VALUES("1","25");
-INSERT INTO rol_permiso VALUES("1","26");
-INSERT INTO rol_permiso VALUES("1","27");
-INSERT INTO rol_permiso VALUES("1","28");
-INSERT INTO rol_permiso VALUES("1","29");
-INSERT INTO rol_permiso VALUES("1","30");
-INSERT INTO rol_permiso VALUES("1","31");
-INSERT INTO rol_permiso VALUES("1","32");
-INSERT INTO rol_permiso VALUES("1","33");
-INSERT INTO rol_permiso VALUES("1","34");
-INSERT INTO rol_permiso VALUES("1","35");
-INSERT INTO rol_permiso VALUES("2","1");
-INSERT INTO rol_permiso VALUES("2","5");
-INSERT INTO rol_permiso VALUES("2","9");
-INSERT INTO rol_permiso VALUES("2","13");
-INSERT INTO rol_permiso VALUES("2","14");
-INSERT INTO rol_permiso VALUES("2","15");
-INSERT INTO rol_permiso VALUES("2","16");
-INSERT INTO rol_permiso VALUES("2","17");
-INSERT INTO rol_permiso VALUES("2","18");
-INSERT INTO rol_permiso VALUES("2","27");
-INSERT INTO rol_permiso VALUES("7","5");
-INSERT INTO rol_permiso VALUES("7","27");
-INSERT INTO rol_permiso VALUES("7","32");
-INSERT INTO rol_permiso VALUES("7","33");
-INSERT INTO rol_permiso VALUES("7","34");
-INSERT INTO rol_permiso VALUES("7","35");
 INSERT INTO rol_permiso VALUES("9","1");
 INSERT INTO rol_permiso VALUES("9","2");
 INSERT INTO rol_permiso VALUES("9","3");
@@ -692,28 +566,19 @@ INSERT INTO rol_permiso VALUES("10","36");
 
 
 TRUNCATE TABLE tipo_bien;
-INSERT INTO tipo_bien VALUES("1","DSFSDFSDFEEE","0");
-INSERT INTO tipo_bien VALUES("2","DANI","0");
 INSERT INTO tipo_bien VALUES("3","INMUEBLE","1");
 
 
 
 TRUNCATE TABLE tipo_reasignacion;
-INSERT INTO tipo_reasignacion VALUES("1","ASDASDASEEE","0");
-INSERT INTO tipo_reasignacion VALUES("2","AQUIFUE","1");
-INSERT INTO tipo_reasignacion VALUES("3","ARI","0");
-INSERT INTO tipo_reasignacion VALUES("4","AQUIFUEX2","0");
+INSERT INTO tipo_reasignacion VALUES("2","POR DESCARGO","1");
 
 
 
 TRUNCATE TABLE usuarios;
-INSERT INTO usuarios VALUES("16","DANIELA","daniela@gmail.com","$2y$06$WWam3FK/3L.nycKH/iPBAu0Z3BHcmcwP.IcXA7hQzBO4Tc9bUQWSG","imagenes/Pizza para colorear.jpg","9","1");
 INSERT INTO usuarios VALUES("19","SUPERUSUARIO","aripaocol@gmail.com","$2y$06$euKoN6UP6PznY7HlhXqOteu9TQWlKfX.YkzlnhNTAevzRSH82Dm0S","imagenes/user.png","10","1");
-INSERT INTO usuarios VALUES("21","ARIANNA","arianna@gmail.com","$2y$06$3a9Nb1BHCaOa2e41j1Oo1.XZtWR7sxc1ajNrauJBV7vIt7eXhPsIa","imagenes/Catedral-BArquisimeto635.jpg","9","1");
-INSERT INTO usuarios VALUES("24","JOSES","jose@gmail.com","$2y$06$SftW5pIun072irZ7J5wf6uaNz1FqHN9GdEEtUIrkuA9YpWx4SRXLa","http://localhost/bienes_nacionales/imagenes/televisor 2.png","0","1");
-INSERT INTO usuarios VALUES("25","PAOLA","marias@goam.com","$2y$06$oEV3VZDTflDHU40XKZagYOJFeTsRCPVSZVkpyIDpB84eFdZ13G0O2","imagenes/user.png","10","1");
 
 
 
 SET FOREIGN_KEY_CHECKS=1;
-DELETE FROM bitacora WHERE fecha > "2022-01-08 12:38:28";
+DELETE FROM bitacora WHERE fecha > "2022-01-17 12:04:28";

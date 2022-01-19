@@ -83,7 +83,7 @@
                     $sql= "SELECT *
                     FROM desincorporar
                     INNER JOIN dependencias ON dependencias.codigo_dependencia = desincorporar.codigo_dependencia
-                    INNER JOIN bienes ON bienes.codigo = desincorporar.codigo_bien";
+                    INNER JOIN bienes ON bienes.codigo = desincorporar.codigo_bien where desincorporar.estado=1 and bienes.estado=1";
                     $consulta= parent::conect()->prepare($sql);
                     $consulta->execute();
                     return $consulta->fetchALL(PDO::FETCH_OBJ);
@@ -117,10 +117,10 @@
 
         public function insertar(desincorporarModel $p){
             try {
-
+                $estado=1;
                 $consulta="INSERT INTO desincorporar( fecha, denuncia,
-                fecha_denuncia, oficio, codigo_dependencia, concepto, codigo_bien)
-                VALUES (?,?,?,?,?,?,?)";
+                fecha_denuncia, oficio, codigo_dependencia, concepto, codigo_bien,estado)
+                VALUES (?,?,?,?,?,?,?,?)";
                 parent::conect()->prepare($consulta)->execute(array(
                     $p->getfecha(),
                     $p->getdenuncia(),
@@ -128,7 +128,8 @@
                     $p->getoficio(),
                     $p->getcodigo_dependencia(),
                     $p->getconservacion(),
-                    $p->getcodigo_bien()
+                    $p->getcodigo_bien(),
+                    $estado
                 ));
                 
                 

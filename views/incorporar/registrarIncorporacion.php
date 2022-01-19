@@ -37,7 +37,6 @@
                                 <label for="fecha">Fecha</label>
                                 <input type="date" class="form-control bg-light" name="fecha" id="fecha">
                             </div>
-                            
                             <div class="form-group col-md-6 col-lg-4">
                                 <label for="codigo_dependencia" title="Codigo">Código de la dependencia</label>
                                 <select class="form-control bg-light" name="codigo_dependencia" id="codigo_dependencia">

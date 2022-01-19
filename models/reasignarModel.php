@@ -85,7 +85,7 @@
 				INNER JOIN reasignar_descripcion ON reasignar_descripcion.num_movimiento = reasignar.num_movimiento
 				INNER JOIN tipo_reasignacion ON tipo_reasignacion.id_tipo = reasignar_descripcion.id_tipo
                 INNER JOIN bienes ON bienes.codigo = reasignar.codigo_bien
-                INNER JOIN dependencias ON dependencias.codigo_dependencia = reasignar.nueva_dependencia";
+                INNER JOIN dependencias ON dependencias.codigo_dependencia = reasignar.nueva_dependencia where reasignar.estado=1 and bienes.estado=1";
                 $consulta= parent::conect()->prepare($sql);
                 $consulta->execute();
                 return $consulta->fetchALL(PDO::FETCH_OBJ);
